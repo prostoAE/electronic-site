@@ -22,7 +22,7 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="header-content-left">
                     <!---category-->
                     <div class="browse-category" id="categories">
@@ -61,11 +61,100 @@
                     <!--/lanquages-->
                 </div>
             </div>
-            <div class="offset-lg-4 col-lg-4">
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg 6"></div>
+            <div class="offset-lg-4 col-lg-4 col-md-6 col-sm-6">
+                <!--header-content-right-->
+                <div class="header-content-right">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="cabinet">
+                                <a href="#" class="cabinet__link">
+                                    <img class="cabinet__icon" src="./assets/img/icons/user-icon.svg"
+                                         alt="иконка ползователя">
+                                    <p class="cabinet__title">Мой акаунт</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cart">
+                                <a href="#" class="cart__link">
+                                    <span class="cart__count">10</span>
+                                    <img src="./assets/img/icons/cart-icon.svg" alt="Иконка корзины" class="cart__icon">
+                                    <p class="cart__title">Корзина</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg 6">
+                            <div class="recall">
+                                <a href="#" class="recall__link">
+                                    <span class="recall__icon"><img src="./assets/img/icons/phone-icon.svg"
+                                                                    alt="Иконка трубки"></span>
+                                    <p class="recall__title">Заказать звонок</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/header-content-right-->
+            </div>
+        </div>
+    </div>
+
+    <!--sub-header-->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="sub-header-content-left">
+                        <a href="#" class="favourite-link">Избранное</a>
+                        <a href="#" class="cart-link">Корзина</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sub-header-content-center">
+                        <p class="header-offer"><span>50% Скидка </span>на покупку до 12 марта!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sub-header-content-right">
+                        <a href="#" class="policy-link">Политика конфиденциальности</a>
+                        <a href="#" class="terms-link">Условия возврата</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/sub-header-->
+
+    <div class="header-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo"><a href="/"><img src="./assets/img/logo.png" alt="Логотип сайта"></a></div>
+                </div>
+                <div class="col-lg-7">
+                    <nav class="top-menu">
+                        <ul class="menu">
+                            <li class="menu__item active has-children"><a href="#">Главная</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#">Сабменю1</a></li>
+                                    <li class="sub-menu__item"><a href="#">Сабменю2222</a></li>
+                                    <li class="sub-menu__item"><a href="#">Сабменю3</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">Магазин</a></li>
+                            <li class="menu__item"><a href="#">Оплата и доставка</a></li>
+                            <li class="menu__item"><a href="#">Блог</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-search">
+                        <form class="search-form">
+                            <input type="text" name="searchProduct">
+                            <input type="submit">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

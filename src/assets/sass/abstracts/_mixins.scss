@@ -42,9 +42,11 @@
         &__list {
             display: none;
             position: absolute;
+            z-index: 1;
             width: $width;
             top: 70px;
             left: 15px;
+            background: $white;
             border: 1px solid $blue-light;
             border-radius: 5px;
             transition: all .5s;
@@ -53,7 +55,7 @@
         &.active {
             .browse-category__list {
                 display: block;
-                top: 55px;
+                top: 70px;
             }
 
             .browse-category__arrow {

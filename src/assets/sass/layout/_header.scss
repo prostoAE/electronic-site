@@ -1,4 +1,5 @@
 .header-content-left {
+    min-height: 80px;
     display: flex;
     align-items: center;
 
@@ -19,10 +20,13 @@
             visibility: hidden;
             width: 150px;
             position: absolute;
-            top: 50px;
+            z-index: 1;
+            top: 80px;
+            opacity: 0;
             left: 0;
             background: $white;
             border: 1px solid $blue-light;
+            transition: all .3s;
         }
 
         &__item {
@@ -47,7 +51,266 @@
         &:hover {
             .lanquages__list {
                 visibility: visible;
+                opacity: 1;
+                top: 50px;
             }
+        }
+    }
+}
+
+.header-content-right {
+
+    .cabinet {
+
+        &__link {
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__icon {
+            width: 25px;
+        }
+
+        &__title {
+            margin-top: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            color: $text-main;
+        }
+    }
+
+    .cart {
+        position: relative;
+
+        &__link {
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__count {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 15px;
+            height: 15px;
+            background: $primary;
+            border-radius: 100%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: .8rem;
+            line-height: 1.5rem;
+            color: $white;
+            text-align: center;
+        }
+
+        &__icon {
+            width: 25px;
+        }
+
+        &__title {
+            margin-top: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            color: $text-main;
+        }
+    }
+
+    .recall {
+        &__link {
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__icon {
+            margin-right: 15px;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background: $blue-light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 24px;
+                height: auto;
+            }
+        }
+
+        &__title {
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            color: $primary;
+        }
+    }
+}
+
+.sub-header {
+    background: $gray-light;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+
+    .sub-header-content-center {
+        text-align: center;
+
+        .header-offer {
+            span {
+                color: $secondary;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .sub-header-content-right {
+        text-align: right;
+    }
+
+    a {
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        color: $text-main;
+        transition: color .3s;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .favourite-link,
+    .policy-link {
+        position: relative;
+        margin-right: 20px;
+
+        &::after {
+            position: absolute;
+            right: -13px;
+            display: inline-block;
+            content: '';
+            width: 1px;
+            height: 1.2rem;
+            background: $text-main;
+        }
+    }
+}
+
+.header-bar {
+    background: $primary;
+
+    .logo {
+        min-height: 85px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.top-menu {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+
+    .menu {
+        display: flex;
+
+        .sub-menu {
+            position: absolute;
+            top: 90px;
+            left: 15px;
+            padding: 25px 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+
+            &__item {
+                padding: 10px 20px 10px 10px;
+                border: 1px solid $blue-light;
+                background: $white;
+                transition: all .3s;
+
+                a {
+                    color: $secondary;
+                }
+
+                &:hover {
+                    background: $primary;
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &__item {
+            position: relative;
+            padding: 0 15px;
+            cursor: pointer;
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: $white;
+            }
+
+            &.active {
+
+            }
+
+            &.has-children > a {
+                position: relative;
+                margin-right: 13px;
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    right: -25px;
+                    transform: translate(-50%, 30%);
+                    content: '';
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url("../img/icons/category-arrow-icon.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: transform .3s;
+                }
+            }
+
+            &.has-children {
+                &:hover {
+                    a {
+                        &::after {
+                            transform: rotate(-180deg) translate(50%, -35%);
+                            filter: hue-rotate(25deg);
+                        }
+                    }
+
+                    .sub-menu {
+                        visibility: visible;
+                        top: 15px;
+                        opacity: 1;
+                    }
+
+                }
+            }
+
         }
     }
 }
