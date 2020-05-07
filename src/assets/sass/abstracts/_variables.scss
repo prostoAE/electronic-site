@@ -1,0 +1,25 @@
+// Colors
+$primary: #215EF8;
+$primary-dark: #0037BF;
+$secondary: #FE5E1C;
+$white: #ffffff;
+$text-main: #333333;
+$text-secondary: #6F6F6F;
+$blue-light: rgba(33, 94, 248, 0.1);
+$gray-light: #F0F0F0;
+$accent: #06B12E;
+$footer: #060606;
+
+// Fonts types
+$roboto: 'Roboto', sans-serif;
+$bellota: 'Bellota', cursive;
+
+// Font size
+$fz-base: 10px;
+
+// Breakpoints
+$breakpoints: (
+        'medium': (max-width: 800px),
+        'large': (min-width: 1000px),
+        'huge': (min-width: 1200px),
+);

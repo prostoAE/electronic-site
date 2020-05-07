@@ -1,0 +1,118 @@
+@mixin respond-to($breakpoint) {
+    $raw-query: map_get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(type-of($raw-query) == 'string',
+                unquote($raw-query),
+                inspect($raw-query)
+        );
+
+        @media #{$query} {
+            @content;
+        }
+    } @else {
+        @error 'Не указано значение для `#{$breakpoint}`. ' + 'Пожалуйста, убедитесь, что точка останова объявлена в карте `$breakpoints`.';
+    }
+}
+
+@mixin browse-category($width: 205px) {
+    .browse-category {
+        display: inline-flex;
+        align-items: center;
+        background: $primary;
+        padding: 17px 15px;
+        border-radius: 22px;
+        cursor: pointer;
+
+        &__icon {
+            width: 11px;
+            height: 11px;
+        }
+
+        .current-category {
+            position: relative;
+            margin: 0 12px;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &__list {
+            display: none;
+            position: absolute;
+            width: $width;
+            top: 70px;
+            left: 15px;
+            border: 1px solid $blue-light;
+            border-radius: 5px;
+            transition: all .5s;
+        }
+
+        &.active {
+            .browse-category__list {
+                display: block;
+                top: 55px;
+            }
+
+            .browse-category__arrow {
+                &::after {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+
+        &__item {
+            padding: 11px 22px;
+            transition: background-color .3s;
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                text-transform: uppercase;
+                color: $secondary;
+                transition: color .3s;
+            }
+
+            &:hover {
+                background: $primary;
+
+                a {
+                    color: $white;
+                }
+            }
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+        }
+
+        &__arrow {
+            display: inline-block;
+            position: relative;
+            width: 15px;
+            height: 15px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                background-image: url("../img/icons/category-arrow-icon.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: transform .3s;
+            }
+        }
+    }
+}
