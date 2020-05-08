@@ -229,8 +229,9 @@
 
         .sub-menu {
             position: absolute;
-            top: 90px;
-            left: 15px;
+            top: 100px;
+            left: 0px;
+            z-index: 1;
             padding: 25px 0;
             visibility: hidden;
             opacity: 0;
@@ -271,6 +272,17 @@
 
             &.active {
 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translateY(-32.5px);
+                    height: 85px;
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.10);
+                    border-bottom: 2px solid $white;
+                }
             }
 
             &.has-children > a {
@@ -311,6 +323,45 @@
                 }
             }
 
+        }
+    }
+}
+
+.header-search {
+    .search-form {
+        position: relative;
+        min-height: 85px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        input[type="text"] {
+            width: 250px;
+            height: 40px;
+            background: $primary-dark;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            color: $white;
+            padding: 10px 20px;
+
+            &::placeholder {
+                color: $white;
+                opacity: .7;
+            }
+        }
+
+        input[type="submit"] {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-20%, -50%);
+            width: 30px;
+            height: 30px;
+            background: $white url('../img/icons/search-icon.svg') center no-repeat;
+            border-radius: 100%;
+            border: none;
+            outline: none;
         }
     }
 }

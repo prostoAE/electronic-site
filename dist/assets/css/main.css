@@ -757,8 +757,9 @@ body {
 
 .top-menu .menu .sub-menu {
     position: absolute;
-    top: 90px;
-    left: 15px;
+    top: 100px;
+    left: 0px;
+    z-index: 1;
     padding: 25px 0;
     visibility: hidden;
     opacity: 0;
@@ -800,6 +801,19 @@ body {
     color: #ffffff;
 }
 
+.top-menu .menu__item.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-32.5px);
+    transform: translateY(-32.5px);
+    height: 85px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #ffffff;
+}
+
 .top-menu .menu__item.has-children > a {
     position: relative;
     margin-right: 13px;
@@ -835,4 +849,68 @@ body {
     visibility: visible;
     top: 15px;
     opacity: 1;
+}
+
+.header-search .search-form {
+    position: relative;
+    min-height: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-search .search-form input[type="text"] {
+    width: 250px;
+    height: 40px;
+    background: #0037BF;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.header-search .search-form input[type="text"]::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.header-search .search-form input[type="text"]::-moz-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.header-search .search-form input[type="text"]:-ms-input-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.header-search .search-form input[type="text"]::-ms-input-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.header-search .search-form input[type="text"]::placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+.header-search .search-form input[type="submit"] {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
+    width: 30px;
+    height: 30px;
+    background: #ffffff url("../img/icons/search-icon.svg") center no-repeat;
+    border-radius: 100%;
+    border: none;
+    outline: none;
 }
