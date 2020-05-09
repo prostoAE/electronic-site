@@ -19,7 +19,9 @@ $fz-base: 10px;
 
 // Breakpoints
 $breakpoints: (
-        'medium': (max-width: 800px),
-        'large': (min-width: 1000px),
-        'huge': (min-width: 1200px),
+        'xs': (max-width: 575px),
+        'sm': (max-width: 767px),
+        'md': (max-width: 991px),
+        'lg': (max-width: 1199px),
+        'xl': (min-width: 1200px),
 );

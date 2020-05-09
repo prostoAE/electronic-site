@@ -224,8 +224,80 @@
     display: flex;
     align-items: center;
 
+    .mobile-menu {
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: auto;
+
+        &__icon {
+            position: relative;
+            width: 25px;
+            height: 2px;
+            background: $white;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: $white;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+
+            &::before {
+                width: 20px;
+                top: -8px;
+            }
+
+            &::after {
+                width: 30px;
+                top: 8px;
+            }
+        }
+
+        &.active {
+            .mobile-menu__icon {
+                height: 0;
+
+                &::before,
+                &::after {
+                    width: 30px;
+                }
+
+                &::before {
+                    transform-origin: right;
+                    transform: rotate(-45deg) translateX(10%);
+                }
+
+                &::after {
+                    transform-origin: right;
+                    transform: rotate(45deg) translateX(10%);
+                }
+            }
+        }
+    }
+
     .menu {
         display: flex;
+
+        @include respond-to('md') {
+            display: block;
+            height: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 280px;
+            left: 0;
+            background: $primary-dark;
+            width: 100%;
+            transition: all .3s ease-in-out;
+        }
 
         .sub-menu {
             position: absolute;
@@ -262,6 +334,11 @@
             padding: 0 15px;
             cursor: pointer;
 
+
+            @include respond-to('md') {
+                padding: 10px 20px;
+            }
+
             a {
                 font-style: normal;
                 font-weight: 500;
@@ -282,6 +359,10 @@
                     width: 100%;
                     background: rgba(255, 255, 255, 0.10);
                     border-bottom: 2px solid $white;
+
+                    @include respond-to('md') {
+                        display: none;
+                    }
                 }
             }
 
@@ -302,6 +383,12 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     transition: transform .3s;
+
+                    @include respond-to('md') {
+                        content: '+';
+                        background-image: none;
+                        transform: translateY(15%);
+                    }
                 }
             }
 
@@ -311,6 +398,11 @@
                         &::after {
                             transform: rotate(-180deg) translate(50%, -35%);
                             filter: hue-rotate(25deg);
+
+                            @include respond-to('md') {
+                                transform: rotate(-180deg) translate(50%, -60%);
+                                transform-origin: center;
+                            }
                         }
                     }
 
@@ -319,15 +411,42 @@
                         top: 15px;
                         opacity: 1;
                     }
-
                 }
             }
 
+        }
+
+        &.active {
+            visibility: visible;
+            top: 210px;
+            height: auto;
+
+            .has-children .sub-menu {
+                height: 0;
+                padding: 0;
+                visibility: hidden;
+                position: relative;
+                opacity: 0;
+                transition: all .3s;
+            }
+
+            .has-children.open {
+                .sub-menu {
+                    height: 100%;
+                    visibility: visible;
+                    padding: 20px 10px;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
 
 .header-search {
+    @include respond-to('md') {
+        display: none;
+    }
+
     .search-form {
         position: relative;
         min-height: 85px;
