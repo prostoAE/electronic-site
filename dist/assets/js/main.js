@@ -1,5 +1,21 @@
 "use strict";
 
+$(document).ready(function () {
+  mainSliderInit();
+});
+
+function mainSliderInit() {
+  $('.slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>'
+  });
+}
+
 document.querySelector('#categories').onclick = function () {
   this.classList.toggle('active');
 };

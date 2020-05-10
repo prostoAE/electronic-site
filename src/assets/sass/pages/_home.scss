@@ -1,0 +1,250 @@
+/*
+Main offer
+============================================================================
+*/
+.main-offer {
+    background: $primary-dark;
+    padding: 90px 0;
+
+    .offer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6.5rem;
+            line-height: 7.6rem;
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 200%;
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+        &__price {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+        .cta {
+            &__detail {
+                background: $white;
+                color: $secondary;
+                margin-left: 20px;
+
+                &:hover {
+                    background: $secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    .slick-prev {
+        background: $white url("../img/icons/slider-arrow.png") no-repeat center;
+        transform: translate(-200%, -50%);
+    }
+
+    .slick-next {
+        right: 20px;
+        background: $white url("../img/icons/slider-arrow.png") no-repeat center;
+        transform: rotateY(180deg) translate(-200%, -50%);
+    }
+}
+
+/*
+Top flash
+============================================================================
+*/
+.top-flash {
+    margin-top: 95px;
+
+    .flash {
+        box-shadow: $box-shadow;
+        margin-bottom: 30px;
+
+        .img-box {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $blue-light;
+
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .info-box {
+            padding: 20px;
+        }
+
+        &__title {
+            font-family: $bellota;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $primary;
+        }
+
+        &__info {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            color: $text-main;
+        }
+
+        &__date {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            color: $text-secondary;
+
+            span {
+                font-weight: bold;
+                color: $secondary;
+            }
+        }
+
+    }
+}
+
+/*
+Features
+============================================================================
+*/
+.features {
+    margin-top: 65px;
+
+    &-wrapper {
+        box-shadow: $box-shadow;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+        .img-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 60px;
+            min-height: 60px;
+            border-radius: 100%;
+            background: $blue-light;
+            transition: all .3s;
+        }
+
+        &__img {
+            max-width: 35px;
+            transition: all .3s;
+        }
+
+        &__desc {
+            margin-left: 10px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            color: $text-main;
+        }
+
+        &__info {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 150%;
+            color: $text-secondary;
+        }
+
+        &:hover {
+            .img-box {
+                background: $primary;
+
+                img {
+                    filter: drop-shadow(2px 4px 6px $footer);
+                }
+            }
+        }
+    }
+}
+
+/*
+Goods
+============================================================================
+*/
+.goods {
+    margin-top: 95px;
+    text-align: center;
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: $text-secondary;
+    }
+
+    &__title {
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 4.7rem;
+        color: $text-main;
+    }
+
+}

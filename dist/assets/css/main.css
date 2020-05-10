@@ -828,6 +828,7 @@ body {
         height: 0;
         visibility: hidden;
         position: fixed;
+        z-index: 20;
         top: 280px;
         left: 0;
         background: #0037BF;
@@ -1054,4 +1055,298 @@ body {
     border-radius: 100%;
     border: none;
     outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 15px;
+    text-align: center;
+    width: 170px;
+    background: #FE5E1C;
+    color: #ffffff;
+    border-radius: 22.5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #FE5E1C;
+}
+
+/*
+Main offer
+============================================================================
+*/
+.main-offer {
+    background: #0037BF;
+    padding: 90px 0;
+}
+
+.main-offer .offer {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-offer .offer__span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.main-offer .offer__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.5rem;
+    line-height: 7.6rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.main-offer .offer__desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 200%;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.main-offer .offer__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.main-offer .offer .cta__detail {
+    background: #ffffff;
+    color: #FE5E1C;
+    margin-left: 20px;
+}
+
+.main-offer .offer .cta__detail:hover {
+    background: #FE5E1C;
+    color: #ffffff;
+}
+
+.main-offer .slick-arrow {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+}
+
+.main-offer .slick-prev,
+  .main-offer .slick-next {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.main-offer .slick-prev:hover,
+    .main-offer .slick-next:hover {
+    opacity: .5;
+}
+
+.main-offer .slick-prev {
+    background: #ffffff url("../img/icons/slider-arrow.png") no-repeat center;
+    -webkit-transform: translate(-200%, -50%);
+    transform: translate(-200%, -50%);
+}
+
+.main-offer .slick-next {
+    right: 20px;
+    background: #ffffff url("../img/icons/slider-arrow.png") no-repeat center;
+    -webkit-transform: rotateY(180deg) translate(-200%, -50%);
+    transform: rotateY(180deg) translate(-200%, -50%);
+}
+
+/*
+Top flash
+============================================================================
+*/
+.top-flash {
+    margin-top: 95px;
+}
+
+.top-flash .flash {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.top-flash .flash .img-box {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(33, 94, 248, 0.1);
+}
+
+.top-flash .flash .img-box img {
+    max-width: 200px;
+}
+
+.top-flash .flash .info-box {
+    padding: 20px;
+}
+
+.top-flash .flash__title {
+    font-family: "Bellota", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #215EF8;
+}
+
+.top-flash .flash__info {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: #333333;
+}
+
+.top-flash .flash__date {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #6F6F6F;
+}
+
+.top-flash .flash__date span {
+    font-weight: bold;
+    color: #FE5E1C;
+}
+
+/*
+Features
+============================================================================
+*/
+.features {
+    margin-top: 65px;
+}
+
+.features-wrapper {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.features .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.features .feature .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 100%;
+    background: rgba(33, 94, 248, 0.1);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.features .feature__img {
+    max-width: 35px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.features .feature__desc {
+    margin-left: 10px;
+}
+
+.features .feature__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: #333333;
+}
+
+.features .feature__info {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #6F6F6F;
+}
+
+.features .feature:hover .img-box {
+    background: #215EF8;
+}
+
+.features .feature:hover .img-box img {
+    -webkit-filter: drop-shadow(2px 4px 6px #060606);
+    filter: drop-shadow(2px 4px 6px #060606);
+}
+
+/*
+Goods
+============================================================================
+*/
+.goods {
+    margin-top: 95px;
+    text-align: center;
+}
+
+.goods__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #6F6F6F;
+}
+
+.goods__title {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    color: #333333;
 }

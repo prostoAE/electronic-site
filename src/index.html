@@ -9,169 +9,351 @@
     <!--Google Fonts-->
     <!--Roboto-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
+          rel="stylesheet">
     <!--Bellota-->
     <link href="https://fonts.googleapis.com/css?family=Bellota:700&display=swap&subset=cyrillic" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
+    <!--Slick Slider-->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css">
     <!--Custom css-->
     <link rel="stylesheet" href="./assets/css/main.min.css">
 </head>
 
 <body>
 
-    <!--Header-->
-    <header class="header">
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="header-content-left">
+                    <!---category-->
+                    <div class="browse-category" id="categories">
+                        <img src="./assets/img/icons/category-menu-icon.svg" alt="Иконка категории"
+                             class="browse-category__icon">
+                        <span class="current-category">Смотерть категории</span>
+                        <ul class="browse-category__list">
+                            <li class="browse-category__item"><a href="#">Квадрокоптеры</a></li>
+                            <li class="browse-category__item"><a href="#">Action камеры</a></li>
+                            <li class="browse-category__item"><a href="#">тв приставки</a></li>
+                            <li class="browse-category__item"><a href="#">акссесуары</a></li>
+                        </ul>
+                        <span class="browse-category__arrow"></span>
+                    </div>
+                    <!---/category-->
+
+                    <!--lanquages-->
+                    <div class="lanquages">
+                        <div class="current-lanquage">
+                            <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png" alt="флаг росии">
+                            <span class="lanquages__title">Рус</span>
+                        </div>
+                        <ul class="lanquages__list">
+                            <li class="lanquages__item">
+                                <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png"
+                                     alt="флаг росии">
+                                <span class="lanquages__title">Рус</span>
+                            </li>
+                            <li class="lanquages__item">
+                                <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png"
+                                     alt="флаг росии">
+                                <span class="lanquages__title">Укр</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/lanquages-->
+                </div>
+            </div>
+            <div class="offset-lg-4 col-lg-4 col-md-6 col-sm-6">
+                <!--header-content-right-->
+                <div class="header-content-right">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="cabinet">
+                                <a href="#" class="cabinet__link">
+                                    <img class="cabinet__icon" src="./assets/img/icons/user-icon.svg"
+                                         alt="иконка ползователя">
+                                    <p class="cabinet__title">Мой акаунт</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="cart">
+                                <a href="#" class="cart__link">
+                                    <span class="cart__count">10</span>
+                                    <img src="./assets/img/icons/cart-icon.svg" alt="Иконка корзины" class="cart__icon">
+                                    <p class="cart__title">Корзина</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recall">
+                                <a href="#" class="recall__link">
+                                        <span class="recall__icon"><img src="./assets/img/icons/phone-icon.svg"
+                                                                        alt="Иконка трубки"></span>
+                                    <p class="recall__title">Заказать звонок</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/header-content-right-->
+            </div>
+        </div>
+    </div>
+
+    <!--sub-header-->
+    <div class="sub-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="header-content-left">
-                        <!---category-->
-                        <div class="browse-category" id="categories">
-                            <img src="./assets/img/icons/category-menu-icon.svg" alt="Иконка категории"
-                                class="browse-category__icon">
-                            <span class="current-category">Смотерть категории</span>
-                            <ul class="browse-category__list">
-                                <li class="browse-category__item"><a href="#">Квадрокоптеры</a></li>
-                                <li class="browse-category__item"><a href="#">Action камеры</a></li>
-                                <li class="browse-category__item"><a href="#">тв приставки</a></li>
-                                <li class="browse-category__item"><a href="#">акссесуары</a></li>
-                            </ul>
-                            <span class="browse-category__arrow"></span>
-                        </div>
-                        <!---/category-->
-
-                        <!--lanquages-->
-                        <div class="lanquages">
-                            <div class="current-lanquage">
-                                <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png"
-                                    alt="флаг росии">
-                                <span class="lanquages__title">Рус</span>
-                            </div>
-                            <ul class="lanquages__list">
-                                <li class="lanquages__item">
-                                    <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png"
-                                        alt="флаг росии">
-                                    <span class="lanquages__title">Рус</span>
-                                </li>
-                                <li class="lanquages__item">
-                                    <img class="lanquages__icon" src="./assets/img/icons/rus-flag-icon.png"
-                                        alt="флаг росии">
-                                    <span class="lanquages__title">Укр</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--/lanquages-->
+                <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
+                    <div class="sub-header-content-left">
+                        <a href="#" class="favourite-link">Избранное</a>
+                        <a href="#" class="cart-link">Корзина</a>
                     </div>
                 </div>
-                <div class="offset-lg-4 col-lg-4 col-md-6 col-sm-6">
-                    <!--header-content-right-->
-                    <div class="header-content-right">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3">
-                                <div class="cabinet">
-                                    <a href="#" class="cabinet__link">
-                                        <img class="cabinet__icon" src="./assets/img/icons/user-icon.svg"
-                                            alt="иконка ползователя">
-                                        <p class="cabinet__title">Мой акаунт</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3">
-                                <div class="cart">
-                                    <a href="#" class="cart__link">
-                                        <span class="cart__count">10</span>
-                                        <img src="./assets/img/icons/cart-icon.svg" alt="Иконка корзины"
-                                            class="cart__icon">
-                                        <p class="cart__title">Корзина</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="recall">
-                                    <a href="#" class="recall__link">
-                                        <span class="recall__icon"><img src="./assets/img/icons/phone-icon.svg"
-                                                alt="Иконка трубки"></span>
-                                        <p class="recall__title">Заказать звонок</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="sub-header-content-center">
+                        <p class="header-offer"><span>50% Скидка </span>на покупку до 12 марта!</p>
                     </div>
-                    <!--/header-content-right-->
+                </div>
+                <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
+                    <div class="sub-header-content-right">
+                        <a href="#" class="policy-link">Политика конфиденциальности</a>
+                        <a href="#" class="terms-link">Условия возврата</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!--/sub-header-->
 
-        <!--sub-header-->
-        <div class="sub-header">
-            <div class="container">
+    <div class="header-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="logo"><a href="/"><img src="./assets/img/logo.png" alt="Логотип сайта"></a></div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <nav class="top-menu">
+                        <div class="mobile-menu d-xl-none d-lg-none"><span class="mobile-menu__icon"></span></div>
+                        <ul class="menu">
+                            <li class="menu__item active has-children"><a href="#">Главная</a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#">Сабменю1</a></li>
+                                    <li class="sub-menu__item"><a href="#">Сабменю2222</a></li>
+                                    <li class="sub-menu__item"><a href="#">Сабменю3</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#">Магазин</a></li>
+                            <li class="menu__item"><a href="#">Оплата и доставка</a></li>
+                            <li class="menu__item"><a href="#">Блог</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-search">
+                        <form class="search-form">
+                            <input type="text" name="searchProduct" placeholder="Искать товар">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--/header-->
+
+<!--main-->
+<main class="main-offer">
+    <div class="container">
+        <div class="slider">
+            <div class="slider__item">
                 <div class="row">
-                    <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
-                        <div class="sub-header-content-left">
-                            <a href="#" class="favourite-link">Избранное</a>
-                            <a href="#" class="cart-link">Корзина</a>
+                    <div class="col-lg-6">
+                        <div class="offer">
+                            <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
+                            <h1 class="offer__title">Качество в формате HD</h1>
+                            <p class="offer__desc">Est urna, duis ipsum posuere blandit a. Orci, urna, mauris, id erat
+                                ac dui in proin at. Porttitor enim pharetra blandit fames.</p>
+                            <span class="offer__price">789.99грн.</span>
+                            <div class="offer__buttons cta">
+                                <a href="#" class="cta__cart btn">Добавить в корзину</a>
+                                <a href="#" class="cta__detail btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="sub-header-content-center">
-                            <p class="header-offer"><span>50% Скидка </span>на покупку до 12 марта!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
-                        <div class="sub-header-content-right">
-                            <a href="#" class="policy-link">Политика конфиденциальности</a>
-                            <a href="#" class="terms-link">Условия возврата</a>
-                        </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
                     </div>
                 </div>
             </div>
-        </div>
-        <!--/sub-header-->
-
-        <div class="header-bar">
-            <div class="container">
+            <div class="slider__item">
                 <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="logo"><a href="/"><img src="./assets/img/logo.png" alt="Логотип сайта"></a></div>
+                    <div class="col-lg-6">
+                        <div class="offer">
+                            <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
+                            <h1 class="offer__title">Качество в формате HD</h1>
+                            <p class="offer__desc">Est urna, duis ipsum posuere blandit a. Orci, urna, mauris, id erat
+                                ac dui in proin at. Porttitor enim pharetra blandit fames.</p>
+                            <span class="offer__price">789.99грн.</span>
+                            <div class="offer__buttons cta">
+                                <a href="#" class="cta__cart btn">Добавить в корзину</a>
+                                <a href="#" class="cta__detail btn">Подробнее</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-7 col-md-6">
-                        <nav class="top-menu">
-                            <div class="mobile-menu d-xl-none d-lg-none"><span class="mobile-menu__icon"></span></div>
-                            <ul class="menu">
-                                <li class="menu__item active has-children"><a href="#">Главная</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a href="#">Сабменю1</a></li>
-                                        <li class="sub-menu__item"><a href="#">Сабменю2222</a></li>
-                                        <li class="sub-menu__item"><a href="#">Сабменю3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu__item"><a href="#">Магазин</a></li>
-                                <li class="menu__item"><a href="#">Оплата и доставка</a></li>
-                                <li class="menu__item"><a href="#">Блог</a></li>
-                                <li class="menu__item"><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
+                    <div class="col-lg-6">
+                        <img src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
                     </div>
-                    <div class="col-lg-3">
-                        <div class="header-search">
-                            <form class="search-form">
-                                <input type="text" name="searchProduct" placeholder="Искать товар">
-                                <input type="submit" value="">
-                            </form>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offer">
+                            <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
+                            <h1 class="offer__title">Качество в формате HD</h1>
+                            <p class="offer__desc">Est urna, duis ipsum posuere blandit a. Orci, urna, mauris, id erat
+                                ac dui in proin at. Porttitor enim pharetra blandit fames.</p>
+                            <span class="offer__price">789.99грн.</span>
+                            <div class="offer__buttons cta">
+                                <a href="#" class="cta__cart btn">Добавить в корзину</a>
+                                <a href="#" class="cta__detail btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--/main-->
+
+<!--Top Flash-->
+<section class="top-flash">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="flash">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="img-box">
+                                <img src="./assets/img/top-flash-1.png" alt="Фото товара">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 info-box">
+                            <h3 class="flash__title">Квадрокоптеры Hubsan со скидкой 15%</h3>
+                            <p class="flash__info">Доставка со 100% гарантией</p>
+                            <p class="flash__date">Старт продаж с: <span>21.10.2020</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="flash">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="img-box">
+                                <img src="./assets/img/top-flash-2.png" alt="Фото товара">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 info-box">
+                            <h3 class="flash__title">Квадрокоптеры Hubsan со скидкой 15%</h3>
+                            <p class="flash__info">Доставка со 100% гарантией</p>
+                            <p class="flash__date">Старт продаж с: <span>21.10.2020</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!--/header-->
+    </div>
+</section>
+<!--/Top Flash-->
 
-    <!-- Optional JavaScript -->
-    <!--jQuery-->
-    <script src="./assets/vendor/js/jquery-3.3.1.slim.min.js"></script>
-    <!--Custom JS-->
-    <script src="./assets/js/main.min.js"></script>
+<!--Features-->
+<section class="features">
+    <div class="container">
+        <div class="row features-wrapper">
+            <div class="col-lg 4">
+                <div class="feature">
+                    <div class="img-box">
+                        <img src="./assets/img/icons/feauture-icon1.svg" alt="Иконка преимущества" class="feature__img">
+                    </div>
+                    <div class="feature__desc">
+                        <h3 class="feature__title">Надежность покупки</h3>
+                        <p class="feature__info">Наши покупатели защищены от покупки и до доставки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg 4">
+                <div class="feature">
+                    <div class="img-box">
+                        <img src="./assets/img/icons/feauture-icon2.svg" alt="Иконка преимущества" class="feature__img">
+                    </div>
+                    <div class="feature__desc">
+                        <h3 class="feature__title">Надежность покупки</h3>
+                        <p class="feature__info">Наши покупатели защищены от покупки и до доставки</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg 4">
+                <div class="feature">
+                    <div class="img-box">
+                        <img src="./assets/img/icons/feauture-icon3.svg" alt="Иконка преимущества" class="feature__img">
+                    </div>
+                    <div class="feature__desc">
+                        <h3 class="feature__title">Надежность покупки</h3>
+                        <p class="feature__info">Наши покупатели защищены от покупки и до доставки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/Features-->
+
+<!--Goods-->
+<section class="goods">
+    <div class="container">
+        <span class="goods__subtitle">Самые популярные</span>
+        <h2 class="goods__title">Трендовые предложения</h2>
+    </div>
+
+    <div class="row">
+        <div class="tabs__links">
+            <ul class="tab-nav">
+                <li class="tab-nav__item">Трендовые</li>
+                <li class="tab-nav__item">Популярные</li>
+                <li class="tab-nav__item">Новинки</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tabs__content">
+        <div class="row">
+            <div class="col-lg-3">Lorem ipsum dolor sit amet.</div>
+            <div class="col-lg-3">Lorem ipsum dolor sit amet.</div>
+            <div class="col-lg-3">Lorem ipsum dolor sit amet.</div>
+            <div class="col-lg-3">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+</section>
+<!--/Goods-->
+
+<!-- Optional JavaScript -->
+<!--jQuery-->
+<script src="./assets/vendor/js/jquery-3.3.1.slim.min.js"></script>
+<!--Slick Slider-->
+<script src="./assets/vendor/js/slick.min.js"></script>
+<!--Custom JS-->
+<script src="./assets/js/main.min.js"></script>
+
 </body>
-
 </html>

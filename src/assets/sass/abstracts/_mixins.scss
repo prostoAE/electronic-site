@@ -118,3 +118,19 @@
         }
     }
 }
+
+@mixin button($bg-color: $secondary, $text-color: $white, $width: 170px) {
+    display: inline-block;
+    padding: 15px 15px;
+    text-align: center;
+    width: $width;
+    background: $bg-color;
+    color: $text-color;
+    border-radius: 22.5px;
+    transition: all .3s;
+
+    &:hover {
+        background: $text-color;
+        color: $bg-color;
+    }
+}

@@ -292,6 +292,7 @@
             height: 0;
             visibility: hidden;
             position: fixed;
+            z-index: 20;
             top: 280px;
             left: 0;
             background: $primary-dark;
