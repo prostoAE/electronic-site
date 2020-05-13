@@ -1,5 +1,6 @@
 .quick-view {
-    
+    display: none;
+
     &__bg {
         position: fixed;
         top: 0;
@@ -10,6 +11,7 @@
 
     &__body {
         position: fixed;
+        z-index: 10;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

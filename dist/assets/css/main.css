@@ -951,6 +951,10 @@ body {
     outline: none;
 }
 
+.quick-view {
+    display: none;
+}
+
 .quick-view__bg {
     position: fixed;
     top: 0;
@@ -961,6 +965,7 @@ body {
 
 .quick-view__body {
     position: fixed;
+    z-index: 10;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
