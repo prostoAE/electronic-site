@@ -4,10 +4,37 @@
     padding-top: 15px;
 
     .img-box {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
+    }
+
+    &__accent {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 44.2px;
+        height: 44.2px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $bellota;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $white;
+
+        &.top {
+            background: $accent;
+        }
+
+        &.new {
+            background: $secondary;
+        }
     }
 
     &__image {
@@ -150,6 +177,5 @@
                 }
             }
         }
-
     }
 }

@@ -54,6 +54,6 @@ $('.tab-nav__item').on('click', function () {
   var content = $(selector);
   $(links).removeClass('active');
   $(this).addClass('active');
-  $('.tab-content__body').removeClass('active');
-  $(content).addClass('active');
+  $('.tab-content__body').hide();
+  $(content).fadeIn(700);
 });
