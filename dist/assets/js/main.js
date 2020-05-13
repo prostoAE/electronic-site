@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
   mainSliderInit();
+  productSliderInit();
 });
 
 function mainSliderInit() {
@@ -57,3 +58,21 @@ $('.tab-nav__item').on('click', function () {
   $('.tab-content__body').hide();
   $(content).fadeIn(700);
 });
+
+function productSliderInit() {
+  $('.img-box').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.img-nav'
+  });
+  $('.img-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.img-box',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+}

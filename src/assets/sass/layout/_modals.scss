@@ -1,0 +1,42 @@
+.quick-view {
+    
+    &__bg {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .4);
+    }
+
+    &__body {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+        max-width: 100%;
+        min-height: 615px;
+        background: $white;
+    }
+
+    .product-modal {
+        position: relative;
+        padding: 35px;
+
+        &__close {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            display: block;
+            width: 35px;
+            height: 35px;
+            background: $white url("../img/icons/close-modal.png") no-repeat center;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
