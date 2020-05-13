@@ -269,9 +269,17 @@ Goods
             }
         }
 
-        .tab-content {
-
-        }
     }
 
+    .tab-content {
+        position: relative;
+
+        &__body {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
 }

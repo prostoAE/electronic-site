@@ -43,3 +43,16 @@ document.onclick = function (e) {
         currentLiElement.classList.toggle('open');
     }
 };
+
+/*Toggle products tabs*/
+$('.tab-nav__item').on('click', function () { 
+    const links = $('.tab-nav__item');
+    const category = $(this).data('tab-link');
+    const selector = '.tab-content__body[data-tab-group="'+ category +'"]'
+    const content = $(selector);
+
+    $(links).removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content__body').removeClass('active');
+    $(content).addClass('active');
+ })

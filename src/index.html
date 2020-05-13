@@ -328,130 +328,312 @@
         <div class="row">
             <div class="tab-links">
                 <ul class="tab-nav">
-                    <li class="tab-nav__item btn active">Трендовые</li>
-                    <li class="tab-nav__item btn">Популярные</li>
-                    <li class="tab-nav__item btn">Новинки</li>
+                    <li class="tab-nav__item btn active" data-tab-link="trends">Трендовые</li>
+                    <li class="tab-nav__item btn" data-tab-link="popular">Популярные</li>
+                    <li class="tab-nav__item btn" data-tab-link="new">Новинки</li>
                 </ul>
             </div>
         </div>
 
         <div class="tab-content">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
-                        </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
-                        </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
-                        </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
-                        </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
+            <div class="tab-content__body active" data-tab-group="trends">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
-                        </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
-                        </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
-                        </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
-                        </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
-                        </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
-                        </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="tab-content__item product-cart">
-                        <div class="img-box">
-                            <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <h4 class="product-cart__name">Беспроводные наушники</h4>
-                        <div class="product-cart__price price">
-                            <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="product-cart__icons icons">
-                            <ul class="icons__list">
-                                <li class="icons__item add-cart"><a href="#"></a></li>
-                                <li class="icons__item view"><a href="#"></a></li>
-                                <li class="icons__item favourite"><a href="#"></a></li>
-                                <li class="icons__item compare"><a href="#"></a></li>
-                            </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="tab-content__body" data-tab-group="popular">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content__body" data-tab-group="new">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tab-content__item product-cart">
+                            <div class="img-box">
+                                <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
+                            </div>
+                            <h4 class="product-cart__name">Беспроводные наушники</h4>
+                            <div class="product-cart__price price">
+                                <p class="price__new">720.99грн.<span class="price__old">770.99грн.</span></p>
+                            </div>
+                            <div class="product-cart__icons icons">
+                                <ul class="icons__list">
+                                    <li class="icons__item add-cart"><a href="#"></a></li>
+                                    <li class="icons__item view"><a href="#"></a></li>
+                                    <li class="icons__item favourite"><a href="#"></a></li>
+                                    <li class="icons__item compare"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

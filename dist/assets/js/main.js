@@ -44,3 +44,16 @@ document.onclick = function (e) {
     currentLiElement.classList.toggle('open');
   }
 };
+/*Toggle products tabs*/
+
+
+$('.tab-nav__item').on('click', function () {
+  var links = $('.tab-nav__item');
+  var category = $(this).data('tab-link');
+  var selector = '.tab-content__body[data-tab-group="' + category + '"]';
+  var content = $(selector);
+  $(links).removeClass('active');
+  $(this).addClass('active');
+  $('.tab-content__body').removeClass('active');
+  $(content).addClass('active');
+});

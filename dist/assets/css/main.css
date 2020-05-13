@@ -1085,6 +1085,7 @@ body {
 .product-cart {
     background: #F0F0F0;
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 .product-cart .img-box {
@@ -1557,4 +1558,16 @@ Goods
 .goods .tab-links .tab-nav__item.active {
     background: #215EF8;
     color: #ffffff;
+}
+
+.goods .tab-content {
+    position: relative;
+}
+
+.goods .tab-content__body {
+    display: none;
+}
+
+.goods .tab-content__body.active {
+    display: block;
 }
