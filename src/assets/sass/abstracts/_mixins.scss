@@ -125,8 +125,14 @@
     text-align: center;
     width: $width;
     background: $bg-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
     color: $text-color;
+    text-transform: uppercase;
     border-radius: 22.5px;
+    cursor: pointer;
     transition: all .3s;
 
     &:hover {

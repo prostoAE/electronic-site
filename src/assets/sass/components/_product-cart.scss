@@ -1,0 +1,154 @@
+.product-cart {
+    background: $gray-light;
+    margin-bottom: 30px;
+
+    .img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        width: 150px;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: $text-main;
+    }
+
+    .price {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-family: $bellota;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 150%;
+        text-align: center;
+        color: $primary;
+
+        &__new {
+            font-size: 1.8rem;
+        }
+
+        &__old {
+            margin-left: 10px;
+            font-size: 1.6rem;
+            text-decoration-line: line-through;
+            opacity: 0.5;
+        }
+    }
+
+    .icons {
+        background: $cart-icons;
+        box-shadow: $box-shadow;
+        transition: background-color .3s;
+
+        &__list {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__item {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            opacity: .4;
+            cursor: pointer;
+            transition: all .3s;
+
+            &.add-cart {
+                background: $secondary url("../img/icons/add-to-cart.png") no-repeat center;
+                &::before {
+                    content: 'В корзину';
+                }
+            }
+
+            &.view {
+                background: $secondary url("../img/icons/cart-view.png") no-repeat center;
+                &::before {
+                    content: 'Просмотр';
+                }
+            }
+
+            &.favourite {
+                background: $secondary url("../img/icons/favourite.png") no-repeat center;
+                &::before {
+                    content: 'В избранное';
+                }
+            }
+
+            &.compare {
+                background: $secondary url("../img/icons/compare.png") no-repeat center;
+                &::before {
+                    content: 'Сравнить';
+                }
+            }
+
+            &::before {
+                position: absolute;
+                z-index: 1;
+                top: -45px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                visibility: hidden;
+                padding: 6px 15px;
+                width: max-content;
+                background: $text-main;
+                border-radius: 6px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.2rem;
+                line-height: 150%;
+                text-align: center;
+                opacity: 0;
+                color: $white;
+                transition: opacity .3s;
+            }
+
+            &::after {
+                content: '';
+                visibility: hidden;
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                width: 14px;
+                height: 14px;
+                transform: translateX(-50%) rotate(45deg);
+                display: block;
+                opacity: 0;
+                background: $text-main;
+                transition: opacity .3s;
+            }
+        }
+    }
+
+    &:hover {
+        .icons {
+            background: $primary-dark;
+
+            &__item {
+                background-color: $primary;
+                opacity: 1;
+
+                &:hover {
+                    background-color: $secondary;
+
+                    &::before,
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -247,4 +247,31 @@ Goods
         color: $text-main;
     }
 
+
+    .tab-links {
+        margin: 0 auto;
+
+        .tab-nav {
+            margin: 50px 0;
+            display: flex;
+            align-items: center;
+
+            &__item {
+                background: $blue-light;
+                color: $primary;
+                margin-left: 14px;
+                margin-right: 14px;
+
+                &.active {
+                    background: $primary;
+                    color: $white;
+                }
+            }
+        }
+
+        .tab-content {
+
+        }
+    }
+
 }

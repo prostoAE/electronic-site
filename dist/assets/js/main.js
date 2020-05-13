@@ -11,6 +11,8 @@ function mainSliderInit() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // fade: true,
+    // cssEase: 'linear',
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>'
   });
