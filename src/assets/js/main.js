@@ -73,7 +73,8 @@ function productSliderInit() {
         dots: false,
         arrows: false,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        infinite: false,
     });
 }
 
@@ -87,7 +88,10 @@ $('.icons__item.view').on('click', function () {
 $('.product-modal__close').on('click', function () {
     const productModal = $('#quickView');
 
-    $('.img-slider-box').slick('unslick');
-    $('.img-nav').slick('unslick');
-    productModal.hide();
+    productModal.fadeOut();
+
+    setTimeout(() => {
+        $('.img-slider-box').slick('unslick');
+        $('.img-nav').slick('unslick');
+    }, 1000);
 });

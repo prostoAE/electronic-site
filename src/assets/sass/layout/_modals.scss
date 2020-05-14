@@ -17,7 +17,6 @@
         transform: translate(-50%, -50%);
         width: 900px;
         max-width: 100%;
-        min-height: 615px;
         background: $white;
     }
 
@@ -39,6 +38,34 @@
             &:hover {
                 background-color: $secondary;
             }
+        }
+
+        .gallery {
+            background: $gray-light;
+            min-height: 500px;
+
+            &__item {
+                padding: 30px;
+            }
+
+            .slick-track {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .img-slider-box {
+            margin-bottom: 30px;
+            background: $white;
+        }
+
+        .img-nav__wrapper.slick-current {
+            // background: $white;
+            height: 80px;
+            // padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
