@@ -68,7 +68,7 @@ function productSliderInit() {
     });
     $('.img-nav').slick({
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         asNavFor: '.img-slider-box',
         dots: false,
         arrows: false,
