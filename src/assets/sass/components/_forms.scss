@@ -60,5 +60,36 @@
 
     &__count {
         margin: 15px 0;
+        width: 130px;
+        height: 50px;
+        display: flex;
+
+        .count {
+            background: $gray-light;
+            min-width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 2rem;
+            color: $text-secondary;
+            transition: background-color .3s ease-in-out;
+
+            &:hover {
+                background: darken($gray-light, 10%);
+            }
+        }
+
+        .count-input {
+            width: 50px;
+            background: $gray-light;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 1.9rem;
+            color: $text-secondary;
+            border: none;
+            text-align: center;
+        }
     }
 }

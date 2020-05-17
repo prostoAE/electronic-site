@@ -135,7 +135,7 @@
         }
 
         &__stock {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-style: normal;
             font-weight: 500;
             font-size: 1.6rem;
@@ -149,7 +149,7 @@
         }
 
         &__category {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-style: normal;
             font-weight: normal;
             font-size: 1.6rem;
@@ -158,6 +158,34 @@
 
             span {
                 font-weight: 500;
+            }
+        }
+
+        .share {
+            &__text {
+                margin-bottom: 10px;
+                font-weight: normal;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                color: $text-secondary;
+            }
+
+            &__link {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5px;
+                width: 25.76px;
+                height: 25.76px;
+                background: $gray-light;
+                border-radius: 5px;
+                color: $primary;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                    background: $secondary;
+                }
             }
         }
     }

@@ -85,6 +85,7 @@ $('.icons__item.view').on('click', function () {
   var productModal = $('#quickView');
   productModal.fadeIn();
   productSliderInit();
+  setProductCount();
 });
 $('.product-modal__close').on('click', function () {
   var productModal = $('#quickView');
@@ -94,3 +95,27 @@ $('.product-modal__close').on('click', function () {
     $('.img-nav').slick('unslick');
   }, 1000);
 });
+/*
+* Set product Count
+* @return void
+* */
+
+function setProductCount() {
+  var control = document.querySelectorAll('.count');
+
+  for (var i = 0; i < control.length; i++) {
+    control[i].onclick = function () {
+      var input = document.querySelector('.count-input');
+
+      if (this.classList.contains('minus')) {
+        if (input.value <= 1) {
+          input.value = 1;
+        } else {
+          input.value--;
+        }
+      } else if (this.classList.contains('plus')) {
+        input.value++;
+      }
+    };
+  }
+}

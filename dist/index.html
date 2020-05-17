@@ -717,7 +717,7 @@
                                     <p class="variation__name">Цвет:</p>
                                     <div class="order-form__group">
                                         <label class="variation__color" style="background: black;">
-                                            <input class="order-form__input" type="radio" name="color" value="black" data-test="yo-yo">
+                                            <input class="order-form__input" type="radio" name="color" checked value="black" data-test="yo-yo">
                                         </label>
                                         <label class="variation__color" style="background: blue;">
                                             <input class="order-form__input" type="radio" name="color" value="blue">
@@ -731,11 +731,12 @@
                                     </div>
                                     <div class="order-form__group">
                                         <div class="order-form__count">
-                                            <span class="count">-</span>
-                                            <input class="order-form__input" type="text" name="count">
-                                            <span class="count">+</span>
+                                            <span class="count minus">-</span>
+                                            <input class="order-form__input count-input" type="text" name="count" value="1">
+                                            <span class="count plus">+</span>
+                                            <button class="order-form__input cart-btn">В корзину<span></span></button>
                                         </div>
-                                        <input class="order-form__input" type="submit" value="В корзину">
+
                                     </div>
                                 </div>
                             </div>

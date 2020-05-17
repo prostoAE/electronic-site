@@ -1,3 +1,46 @@
 .btn {
     @include button();
 }
+
+.cart-btn {
+    position: relative;
+    display: block;
+    margin-left: 30px;
+    min-width: 180px;
+    padding: 0 10px;
+    height: 50px;
+    background: $secondary;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    transition: all .3s ease-in-out;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: 10px;
+        transform: translateX(-100%);
+        background: rgba(255, 255, 255, .4) url("../img/icons/add-to-cart-arrow.png") no-repeat center;
+        border-radius: 5px;
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        padding-right: 60px;
+
+        &::after {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
