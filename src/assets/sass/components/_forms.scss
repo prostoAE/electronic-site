@@ -93,3 +93,33 @@
         }
     }
 }
+
+.subscribe-form {
+    &-group {
+
+    }
+
+    &__input[type="text"] {
+        width: 320px;
+        margin-right: 50px;
+        padding-bottom: 17px;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: $white;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+        &::placeholder {
+            color: $white;
+            opacity: .5;
+        }
+    }
+
+    &__input[type="submit"] {
+        border: none;
+        width: 155px;
+    }
+}
