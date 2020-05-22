@@ -2434,3 +2434,12 @@ Discount
     font-size: 1.2rem;
     line-height: 1.4rem;
 }
+
+/*
+Latest news
+============================================================================
+*/
+.latest-news {
+    margin-top: 50px;
+    background: #F0F0F0;
+}
