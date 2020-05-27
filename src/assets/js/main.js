@@ -20,6 +20,10 @@ document.querySelector('#categories').onclick = function () {
     this.classList.toggle('active');
 };
 
+document.querySelector('#categories-news').onclick = function () {
+    this.classList.toggle('active');
+};
+
 document.querySelector('.mobile-menu').onclick = function () {
     const menu = document.querySelector('.menu');
 
