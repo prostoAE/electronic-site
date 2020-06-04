@@ -1232,6 +1232,7 @@ body {
 }
 
 .browse-category {
+    position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1239,7 +1240,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     background: #215EF8;
-    padding: 17px 15px;
+    padding: 15px;
     border-radius: 22px;
     cursor: pointer;
 }
@@ -1265,7 +1266,7 @@ body {
     z-index: 1;
     width: 205px;
     top: 70px;
-    left: 15px;
+    left: 0;
     background: #ffffff;
     border: 1px solid rgba(33, 94, 248, 0.1);
     border-radius: 5px;
@@ -1691,6 +1692,89 @@ body {
 .subscribe-form__input[type="submit"] {
     border: none;
     width: 155px;
+}
+
+.articles {
+    margin-top: 50px;
+}
+
+.articles__item:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.articles__item:hover p {
+    color: #FE5E1C;
+}
+
+.articles__link {
+    min-height: 280px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.articles__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.articles__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+
+.articles__author {
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #ffffff;
+}
+
+.articles__date {
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #ffffff;
+}
+
+.articles__title {
+    position: relative;
+    z-index: 1;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: #ffffff;
+    -webkit-transition: color .5s;
+    transition: color .5s;
 }
 
 /*
@@ -2440,6 +2524,113 @@ Latest news
 ============================================================================
 */
 .latest-news {
-    margin-top: 50px;
+    padding: 50px 0;
     background: #F0F0F0;
+}
+
+.latest-news__info {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.latest-news__title {
+    font-weight: bold;
+    font-size: 3.7rem;
+    line-height: 4.3rem;
+    color: #333333;
+}
+
+.latest-news__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 120px;
+}
+
+.latest-news__link {
+    height: 45px;
+    width: 142px;
+}
+
+.latest-news .browse-category {
+    margin-left: 30px;
+    width: 142px;
+}
+
+/*
+Video Reviews
+============================================================================
+*/
+.video-reviews {
+    padding: 90px 0px;
+}
+
+.video-reviews__title {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    color: #333333;
+}
+
+.video-reviews__title i {
+    margin-right: 10px;
+    color: #FF0000;
+}
+
+.review__list {
+    margin-top: 60px;
+}
+
+.review__link {
+    position: relative;
+    display: block;
+}
+
+.review__link::before {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+    content: '';
+    width: 60px;
+    height: 44px;
+    background: url("../img/icons/youtube-play.png") no-repeat center;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.review__link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #FE5E1C;
+    opacity: .5;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.review__link:hover::before {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.review__link:hover::after {
+    height: 100%;
 }

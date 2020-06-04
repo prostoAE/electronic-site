@@ -657,6 +657,107 @@ Latest news
 ============================================================================
 */
 .latest-news {
-    margin-top: 50px;
+    padding: 50px 0;
     background: $gray-light;
+
+    &__info {
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: $text-main;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 3.7rem;
+        line-height: 4.3rem;
+        color: $text-main;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 120px;
+    }
+
+    &__link {
+        height: 45px;
+        width: 142px;
+    }
+
+    .browse-category {
+        margin-left: 30px;
+        width: 142px;
+    }
+}
+
+/*
+Video Reviews
+============================================================================
+*/
+.video-reviews {
+    padding: 90px 0px;
+
+    &__title {
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 4.7rem;
+        color: $text-main;
+
+        i {
+            margin-right: 10px;
+            color: #FF0000;
+        }
+    }
+}
+
+.review {
+    &__list {
+        margin-top: 60px;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+
+        &::before {
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 20%);
+            content: '';
+            width: 60px;
+            height: 44px;
+            background: url("../img/icons/youtube-play.png") no-repeat center;
+            transition: all .3s ease-in;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 0;
+            background: $secondary;
+            opacity: .5;
+            transition: all .3s ease-in;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            &::after {
+                height: 100%;
+            }
+        }
+    }
 }

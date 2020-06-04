@@ -126,7 +126,7 @@ function setProductCount() {
 
 
 function makeTimer() {
-  var endTime = new Date("may  21, 2020 17:00:00");
+  var endTime = new Date("july  28, 2020 12:33:30");
   var endTime = Date.parse(endTime) / 1000;
   var now = new Date();
   var now = Date.parse(now) / 1000;
