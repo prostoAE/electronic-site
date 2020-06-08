@@ -6,6 +6,10 @@ Main offer
     background: $primary-dark;
     padding: 90px 0;
 
+    @include respond-to('md') {
+        padding: 50px 0;
+    }
+
     .offer {
         height: 100%;
         display: flex;
@@ -48,6 +52,12 @@ Main offer
             margin-bottom: 25px;
         }
 
+        &__img {
+            @include respond-to('md') {
+                margin-bottom: 30px;
+            }
+        }
+
         .cta {
             &__detail {
                 background: $white;
@@ -75,6 +85,10 @@ Main offer
         position: absolute;
         z-index: 10;
         top: 50%;
+
+        @include respond-to('lg') {
+            display: none !important;
+        }
     }
 
     .slick-prev,
@@ -272,6 +286,11 @@ Goods
                 margin-left: 14px;
                 margin-right: 14px;
 
+                @include respond-to('sm') {
+                    width: 100px;
+                    padding: 12px;
+                }
+
                 &.active {
                     background: $primary;
                     color: $white;
@@ -307,6 +326,10 @@ Subscribe
         flex-direction: column;
         justify-content: center;
 
+        @include respond-to('md') {
+            min-height: 300px;
+        }
+
         &__news {
             font-weight: 500;
             font-size: 1.4rem;
@@ -338,6 +361,11 @@ Subscribe
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond-to('md') {
+            max-width: 550px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -350,6 +378,10 @@ Discount
 
     &__left {
         position: relative;
+
+        @include respond-to('md') {
+            margin-bottom: 20px;
+        }
 
         &::after {
             content: '';
@@ -680,6 +712,10 @@ Latest news
         justify-content: flex-end;
         align-items: flex-end;
         height: 120px;
+
+        @include respond-to('md') {
+            height: 80px;
+        }
     }
 
     &__link {

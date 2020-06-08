@@ -30,7 +30,7 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="header-content-left">
                     <!---category-->
                     <div class="browse-category" id="categories">
@@ -69,11 +69,11 @@
                     <!--/lanquages-->
                 </div>
             </div>
-            <div class="offset-lg-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="offset-lg-4 col-lg-4 col-md-6 col-sm-12">
                 <!--header-content-right-->
                 <div class="header-content-right">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
                             <div class="cabinet">
                                 <a href="#" class="cabinet__link">
                                     <img class="cabinet__icon" src="./assets/img/icons/user-icon.svg"
@@ -82,7 +82,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
                             <div class="cart">
                                 <a href="#" class="cart__link">
                                     <span class="cart__count">10</span>
@@ -91,7 +91,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-sm-4">
                             <div class="recall">
                                 <a href="#" class="recall__link">
                                         <span class="recall__icon"><img src="./assets/img/icons/phone-icon.svg"
@@ -111,7 +111,7 @@
     <div class="sub-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
+                <div class="col-lg-4 col-lg-4 d-none d-lg-block">
                     <div class="sub-header-content-left">
                         <a href="#" class="favourite-link">Избранное</a>
                         <a href="#" class="cart-link">Корзина</a>
@@ -122,7 +122,7 @@
                         <p class="header-offer"><span>50% Скидка </span>на покупку до 12 марта!</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-lg-4 d-md-none d-lg-block">
+                <div class="col-lg-4 col-lg-4 d-none d-lg-block">
                     <div class="sub-header-content-right">
                         <a href="#" class="policy-link">Политика конфиденциальности</a>
                         <a href="#" class="terms-link">Условия возврата</a>
@@ -136,19 +136,20 @@
     <div class="header-bar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="logo"><a href="/"><img src="./assets/img/logo.png" alt="Логотип сайта"></a></div>
                 </div>
-                <div class="col-lg-7 col-md-6">
+                <div class="col-lg-7 col-md-6 col-sm-6">
                     <nav class="top-menu">
                         <div class="mobile-menu d-xl-none d-lg-none"><span class="mobile-menu__icon"></span></div>
                         <ul class="menu">
-                            <li class="menu__item active has-children"><a href="#">Главная</a>
-                                <ul class="sub-menu">
+                            <li class="menu__item active"><a href="#">Главная</a>
+                                <!--                            <li class="menu__item active has-children"><a href="#">Главная</a>-->
+                                <!--<ul class="sub-menu">
                                     <li class="sub-menu__item"><a href="#">Сабменю1</a></li>
                                     <li class="sub-menu__item"><a href="#">Сабменю2222</a></li>
                                     <li class="sub-menu__item"><a href="#">Сабменю3</a></li>
-                                </ul>
+                                </ul>-->
                             </li>
                             <li class="menu__item"><a href="#">Магазин</a></li>
                             <li class="menu__item"><a href="#">Оплата и доставка</a></li>
@@ -177,7 +178,7 @@
         <div class="slider">
             <div class="slider__item">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-2 order-lg-1">
                         <div class="offer">
                             <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
                             <h1 class="offer__title">Качество в формате HD</h1>
@@ -191,14 +192,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img class="offer__img" src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
                     </div>
                 </div>
             </div>
             <div class="slider__item">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-2 order-lg-1">
                         <div class="offer">
                             <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
                             <h1 class="offer__title">Качество в формате HD</h1>
@@ -212,14 +213,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="./assets/img/main-slider2-img.png" alt="Картинка слайдера">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img class="offer__img" src="./assets/img/main-slider2-img.png" alt="Картинка слайдера">
                     </div>
                 </div>
             </div>
             <div class="slider__item">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-2 order-lg-1">
                         <div class="offer">
                             <span class="offer__span">Скидка на Xiaomi 4K до 30%</span>
                             <h1 class="offer__title">Качество в формате HD</h1>
@@ -233,8 +234,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img class="offer__img" src="./assets/img/main-slider-img.png" alt="Картинка слайдера">
                     </div>
                 </div>
             </div>
@@ -247,15 +248,15 @@
 <section class="top-flash">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="flash">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-12 col-sm-6">
                             <div class="img-box">
                                 <img src="./assets/img/top-flash-1.png" alt="Фото товара">
                             </div>
                         </div>
-                        <div class="col-lg-6 info-box">
+                        <div class="col-lg-6 col-md-12 col-sm-6 info-box">
                             <h3 class="flash__title">Квадрокоптеры Hubsan со скидкой 15%</h3>
                             <p class="flash__info">Доставка со 100% гарантией</p>
                             <p class="flash__date">Старт продаж с: <span>21.10.2020</span></p>
@@ -263,15 +264,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="flash">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-12 col-sm-6">
                             <div class="img-box">
                                 <img src="./assets/img/top-flash-2.png" alt="Фото товара">
                             </div>
                         </div>
-                        <div class="col-lg-6 info-box">
+                        <div class="col-lg-6 col-md-12 col-sm-6 info-box">
                             <h3 class="flash__title">Квадрокоптеры Hubsan со скидкой 15%</h3>
                             <p class="flash__info">Доставка со 100% гарантией</p>
                             <p class="flash__date">Старт продаж с: <span>21.10.2020</span></p>
@@ -345,7 +346,7 @@
         <div class="tab-content">
             <div class="tab-content__body" data-tab-group="trends">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <span class="product-cart__accent top">Top</span>
@@ -365,7 +366,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <span class="product-cart__accent new">New</span>
@@ -385,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -404,7 +405,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -423,7 +424,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -442,7 +443,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -465,7 +466,7 @@
             </div>
             <div class="tab-content__body" data-tab-group="popular">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -484,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -503,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -522,7 +523,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -541,7 +542,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -564,7 +565,7 @@
             </div>
             <div class="tab-content__body" data-tab-group="new">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -583,7 +584,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -602,7 +603,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -621,7 +622,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tab-content__item product-cart">
                             <div class="img-box">
                                 <img src="./assets/img/product-image.png" alt="Фото товара" class="product-cart__image">
@@ -648,10 +649,10 @@
 <!--/Goods-->
 
 <!--subscribe-->
-<section class="parallax-window subscribe" data-parallax="scroll" data-image-src="./assets/img/sound-image.jpg">
+<section class="subscribe parallax-window" data-parallax="scroll" data-image-src="./assets/img/sound-image.jpg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-2 order-lg-1">
                 <div class="subscribe-info">
                     <div class="row">
                         <p class="subscribe-info__news">Новости</p>
@@ -670,7 +671,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2">
                 <div class="subscribe-img-box">
                     <img src="./assets/img/subscribe-img.png" alt="картинка блока подписки">
                 </div>
@@ -780,7 +781,7 @@
         </div>
         <div class="articles">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <article class="articles__item">
                         <a href="#" class="articles__link">
                             <img src="./assets/img/article1-img.png" alt="изображение статьи" class="articles__img">
@@ -795,7 +796,7 @@
                     </article>
                     <!-- /.articles__item -->
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <article class="articles__item">
                         <a href="#" class="articles__link">
                             <img src="./assets/img/article2-img.png" alt="изображение статьи" class="articles__img">
@@ -810,7 +811,7 @@
                     </article>
                     <!-- /.articles__item -->
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <article class="articles__item">
                         <a href="#" class="articles__link">
                             <img src="./assets/img/article3-img.png" alt="изображение статьи" class="articles__img">
@@ -825,7 +826,7 @@
                     </article>
                     <!-- /.articles__item -->
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <article class="articles__item">
                         <a href="#" class="articles__link">
                             <img src="./assets/img/article4-img.png" alt="изображение статьи" class="articles__img">
@@ -854,31 +855,35 @@
         </div>
         <div class="review__list">
             <div class="row no-gutters">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="review__item">
                         <a href="#" class="review__link">
-                            <img class="review__img" src="./assets/img/youtube-img1.png" alt="фото картинки видеоролика">
+                            <img class="review__img" src="./assets/img/youtube-img1.png"
+                                 alt="фото картинки видеоролика">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="review__item">
                         <a href="#" class="review__link">
-                            <img class="review__img" src="./assets/img/youtube-img2.png" alt="фото картинки видеоролика">
+                            <img class="review__img" src="./assets/img/youtube-img2.png"
+                                 alt="фото картинки видеоролика">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="review__item">
                         <a href="#" class="review__link">
-                            <img class="review__img" src="./assets/img/youtube-img3.png" alt="фото картинки видеоролика">
+                            <img class="review__img" src="./assets/img/youtube-img3.png"
+                                 alt="фото картинки видеоролика">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="review__item">
                         <a href="#" class="review__link">
-                            <img class="review__img" src="./assets/img/youtube-img4.png" alt="фото картинки видеоролика">
+                            <img class="review__img" src="./assets/img/youtube-img4.png"
+                                 alt="фото картинки видеоролика">
                         </a>
                     </div>
                 </div>
@@ -887,6 +892,138 @@
     </div>
 </section>
 <!-- /.video-reviews -->
+
+<footer class="footer">
+    <div class="footer-contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="call-us">
+                        <span class="call-us__icon"><img src="./assets/img/icons/phone-icon.svg" alt="иконка телефона"></span>
+                        <div class="call-us__desc">
+                            <h4 class="call-us__title">Позвонить нам</h4>
+                            <a href="tel:+38(099)775-25-25" class="call-us__link">+38(099)775-25-25</a>
+                            <a href="tel:+38(099)775-25-25" class="call-us__link">+38(099)775-25-25</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="mail-us">
+                        <span class="mail-us__icon"><img src="./assets/img/icons/mail-icon.svg"
+                                                         alt="иконка телефона"></span>
+                        <div class="mail-us__desc">
+                            <h4 class="mail-us__title">Напишите нам</h4>
+                            <a href="mailto:store@gmail.com" class="mail-us__link">store@gmail.com</a>
+                            <a href="mailto:example@test.com" class="mail-us__link">example@test.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="location">
+                        <span class="location__icon"><img src="./assets/img/icons/location-icon.svg"
+                                                          alt="иконка телефона"></span>
+                        <div class="location__desc">
+                            <h4 class="location__title">Наш адрес</h4>
+                            <address class="location__link">г. Киев, пр-кт. Победы 22</address>
+                            <address class="location__link">г. Харьков, ул. Ремонтников 17-Б</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer-contacts -->
+
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="site-info">
+                        <a href="/" class="site-info__link">
+                            <img src="./assets/img/logo.png" alt="логотип сайта">
+                        </a>
+                        <p class="site-info__desc">Магазин електронной техники и аксесуаров</p>
+                        <div class="site-info__social social">
+                            <a href="/" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="/" class="social__link"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="/" class="social__link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="/" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h3 class="footer-main__title">Оставайтесь на связи</h3>
+                    <div class="footer-col-contacts">
+                        <address class="footer-col-contacts__address">г. Киев, пр-кт. Победы 22</address>
+                        <address class="footer-col-contacts__address">г. Харьков, ул. Ремонтников 17-Б</address>
+                        <a href="tel:350-19-22" class="footer-col-contacts__hotline"><span>Hotline: </span>350-19-22</a>
+                        <a href="mailto:info@example.com.ua" class="footer-col-contacts__mail"><span>Email: </span>info@example.com.ua</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h3 class="footer-main__title">Квадрокоптеры</h3>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#">Xiaomi</a></li>
+                            <li class="footer-nav__item"><a href="#">Xiaomi</a></li>
+                            <li class="footer-nav__item"><a href="#">Xiaomi</a></li>
+                            <li class="footer-nav__item"><a href="#">Xiaomi</a></li>
+                            <li class="footer-nav__item"><a href="#">Xiaomi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h3 class="footer-main__title">Полезное</h3>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item"><a href="#">Гарании</a></li>
+                            <li class="footer-nav__item"><a href="#">Оплата и доставка</a></li>
+                            <li class="footer-nav__item"><a href="#">Политика конфиденциальности </a></li>
+                            <li class="footer-nav__item"><a href="#">Обслуживание</a></li>
+                            <li class="footer-nav__item"><a href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer-main -->
+
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="copyright">
+                        <p class="copyright__text"><i class="far fa-copyright"></i>2020 все права защищены</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="pay-methods">
+                        <ul class="pay-methods__list">
+                            <li class="pay-methods__item">
+                                <a href="#">
+                                    <img src="./assets/img/icons/webmoney.png" alt="webmoney icon">
+                                </a>
+                            </li>
+                            <li class="pay-methods__item">
+                                <a href="#">
+                                    <img src="./assets/img/icons/mastercard.png" alt="mastercard icon">
+                                </a>
+                            </li>
+                            <li class="pay-methods__item">
+                                <a href="#">
+                                    <img src="./assets/img/icons/visa.png" alt="visa icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.sub-footer -->
+</footer>
+<!-- /.footer -->
 
 <!-- Modals -->
 <div class="quick-view" id="quickView">

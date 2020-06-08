@@ -1,8 +1,17 @@
 .quick-view {
     display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     &__bg {
         position: fixed;
+        z-index: -1;
         top: 0;
         width: 100%;
         height: 100%;
@@ -10,7 +19,7 @@
     }
 
     &__body {
-        position: fixed;
+        position: relative;
         z-index: 10;
         top: 50%;
         left: 50%;
@@ -18,6 +27,13 @@
         width: 900px;
         max-width: 100%;
         background: $white;
+
+        @include respond-to('md') {
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+        }
     }
 
     .product-modal {
@@ -59,13 +75,17 @@
             background: $white;
         }
 
-        .img-nav__wrapper.slick-current {
-            // background: $white;
-            height: 80px;
-            // padding: 3px;
+        .img-nav__wrapper {
+            width: 70px;
+            height: auto;
+            padding: 4px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &.slick-current {
+                background: $white;
+            }
         }
     }
 

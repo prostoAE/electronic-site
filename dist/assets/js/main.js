@@ -31,23 +31,23 @@ document.querySelector('.mobile-menu').onclick = function () {
   this.classList.toggle('active');
   menu.classList.toggle('active');
 };
+/*document.querySelector('.has-children').onclick = function () {
+    this.classList.toggle('open');
+};*/
 
-document.querySelector('.has-children').onclick = function () {
-  this.classList.toggle('open');
-};
+/*document.onclick = function (e) {
+    const currentLiElement = document.querySelector('.has-children.active');
+    const currentLink = document.querySelector('.has-children.active a');
 
-document.onclick = function (e) {
-  var currentLiElement = document.querySelector('.has-children.active');
-  var currentLink = document.querySelector('.has-children.active a');
+    if (currentLiElement.classList.contains('open') && e.target !== currentLiElement) {
+        currentLiElement.classList.toggle('open');
+    }
 
-  if (currentLiElement.classList.contains('open') && e.target !== currentLiElement) {
-    currentLiElement.classList.toggle('open');
-  }
+    if (e.target === currentLink) {
+        currentLiElement.classList.toggle('open');
+    }
+};*/
 
-  if (e.target === currentLink) {
-    currentLiElement.classList.toggle('open');
-  }
-};
 /*Toggle products tabs*/
 
 

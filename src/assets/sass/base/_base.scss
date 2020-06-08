@@ -1,6 +1,10 @@
 // Base font size
 html {
     font-size: $fz-base;
+
+    @include respond-to('sm') {
+        font-size: 8px;
+    }
 }
 
 body {

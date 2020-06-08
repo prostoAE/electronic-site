@@ -31,11 +31,11 @@ document.querySelector('.mobile-menu').onclick = function () {
     menu.classList.toggle('active');
 };
 
-document.querySelector('.has-children').onclick = function () {
+/*document.querySelector('.has-children').onclick = function () {
     this.classList.toggle('open');
-};
+};*/
 
-document.onclick = function (e) {
+/*document.onclick = function (e) {
     const currentLiElement = document.querySelector('.has-children.active');
     const currentLink = document.querySelector('.has-children.active a');
 
@@ -46,7 +46,7 @@ document.onclick = function (e) {
     if (e.target === currentLink) {
         currentLiElement.classList.toggle('open');
     }
-};
+};*/
 
 /*Toggle products tabs*/
 $('.tab-nav__item').on('click', function () {
