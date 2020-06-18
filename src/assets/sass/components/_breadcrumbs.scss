@@ -1,0 +1,36 @@
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        margin: 0 12px;
+        line-height: 2.3rem;
+        position: relative;
+
+        &:not(:first-child) {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 40%;
+                left: -16px;
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                background: $primary;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: inherit;
+        color: $white;
+
+        &.current {
+            color: $primary;
+        }
+    }
+}

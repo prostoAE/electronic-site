@@ -30,11 +30,16 @@
     'components/category-list',
     'components/product-cart',
     'components/forms',
-    'components/article-item';
+    'components/article-item',
+    'components/breadcrumbs',
+    'components/range-slider',
+    'components/product-category-widget',
+    'components/shop-tags_widget';
 
 // pages folder
 @import
-    'pages/home';
+    'pages/home',
+    'pages/shop';
 
 // themes folder
 @import

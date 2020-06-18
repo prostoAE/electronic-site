@@ -20,9 +20,11 @@ document.querySelector('#categories').onclick = function () {
     this.classList.toggle('active');
 };
 
-document.querySelector('#categories-news').onclick = function () {
-    this.classList.toggle('active');
-};
+if (document.querySelector('#categories-news')) {
+    document.querySelector('#categories-news').onclick = function () {
+        this.classList.toggle('active');
+    };
+}
 
 document.querySelector('.mobile-menu').onclick = function () {
     const menu = document.querySelector('.menu');
@@ -127,24 +129,57 @@ function setProductCount() {
 
 // Count Time
 function makeTimer() {
-    var endTime = new Date("july  28, 2020 12:33:30");
+    var endTime = new Date('july  28, 2020 12:33:30');
     var endTime = (Date.parse(endTime)) / 1000;
     var now = new Date();
     var now = (Date.parse(now) / 1000);
     var timeLeft = endTime - now;
     var days = Math.floor(timeLeft / 86400);
     var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
     var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-    if (hours < "10") { hours = "0" + hours; }
-    if (minutes < "10") { minutes = "0" + minutes; }
-    if (seconds < "10") { seconds = "0" + seconds; }
-    $("#days").html(days);
-    $("#hour").html(hours);
-    $("#min").html(minutes);
-    $("#sec").html(seconds);
+    if (hours < '10') {
+        hours = '0' + hours;
+    }
+    if (minutes < '10') {
+        minutes = '0' + minutes;
+    }
+    if (seconds < '10') {
+        seconds = '0' + seconds;
+    }
+    $('#days').html(days);
+    $('#hour').html(hours);
+    $('#min').html(minutes);
+    $('#sec').html(seconds);
 }
-setInterval(function() { makeTimer(); }, 300);
 
+setInterval(function () {
+    makeTimer();
+}, 300);
 
+if (document.querySelector('#slider-range')) {
+    $(function () {
+        $('#slider-range').slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [75, 300],
+            slide: function (event, ui) {
+                $('#amount').val(ui.values[0] + 'грн. - ' + ui.values[1] + 'грн.');
+            },
+            stop: function( event, ui ) {alert('Stop!!!')}
+        });
+        $('#amount').val($('#slider-range').slider('values', 0) +
+            'грн. - ' + $('#slider-range').slider('values', 1) + 'грн.');
+    });
+}
 
+if (document.querySelector('#accordion')) {
+    $( "#accordion" ).accordion({
+        icons: false,
+        heightStyle: "content",
+        collapsible: true,
+        active: 0
+    });
+
+}

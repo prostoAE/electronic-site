@@ -23,6 +23,10 @@ Main offer
             line-height: 1.9rem;
             color: $white;
             margin-bottom: 25px;
+
+            @include respond-to('sm') {
+                margin-bottom: 10px;
+            }
         }
 
         &__title {
@@ -32,6 +36,11 @@ Main offer
             line-height: 7.6rem;
             color: $white;
             margin-bottom: 25px;
+
+            @include respond-to('sm') {
+                font-size: 5rem;
+                margin-bottom: 10px;
+            }
         }
 
         &__desc {
@@ -41,6 +50,10 @@ Main offer
             line-height: 200%;
             color: $white;
             margin-bottom: 25px;
+
+            @include respond-to('sm') {
+                margin-bottom: 10px;
+            }
         }
 
         &__price {
@@ -59,6 +72,12 @@ Main offer
         }
 
         .cta {
+            .btn {
+                @include respond-to('xs') {
+                    width: 130px;
+                }
+            }
+
             &__detail {
                 background: $white;
                 color: $secondary;
@@ -143,6 +162,10 @@ Top flash
 
         .info-box {
             padding: 20px;
+
+            @include respond-to('xs') {
+                padding: 10px;
+            }
         }
 
         &__title {
@@ -291,6 +314,11 @@ Goods
                     padding: 12px;
                 }
 
+                @include respond-to('sm') {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
                 &.active {
                     background: $primary;
                     color: $white;
@@ -336,6 +364,11 @@ Subscribe
             line-height: 1.6rem;
             color: $white;
             margin-bottom: 7px;
+
+            @include respond-to('xs') {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
         }
 
         &__title {
@@ -345,6 +378,11 @@ Subscribe
             line-height: 4.7rem;
             color: $white;
             margin-bottom: 20px;
+
+            @include respond-to('xs') {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
         }
 
         &__subtitle {
@@ -353,6 +391,11 @@ Subscribe
             line-height: 2rem;
             color: $white;
             margin-bottom: 35px;
+
+            @include respond-to('xs') {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
         }
     }
 
@@ -411,6 +454,12 @@ Discount
             height: 100px;
             background: $secondary;
             font-size: 3.2rem;
+
+            @include respond-to('xs') {
+                width: 70px;
+                height: 70px;
+                font-size: 3rem;
+            }
         }
 
         &__img {
@@ -461,6 +510,10 @@ Discount
         padding: 0 25px;
         box-sizing: border-box;
 
+        @include respond-to('xs') {
+            padding: 0 10px;
+        }
+
         .offer-day {
             height: 255px;
             display: flex;
@@ -495,6 +548,10 @@ Discount
                 width: 218px;
                 border: 1px solid $cart-icons;
                 box-sizing: border-box;
+
+                @include respond-to('xs') {
+                    max-width: 50%;
+                }
             }
 
             .icons {
@@ -506,6 +563,10 @@ Discount
                     padding: 10px 15px;
                     display: flex;
                     justify-content: space-around;
+
+                    @include respond-to('xs') {
+                        padding: 5px;
+                    }
                 }
 
                 &__item {
@@ -609,6 +670,10 @@ Discount
 
             &__right {
                 margin-left: 30px;
+
+                @include respond-to('xs') {
+                    margin-left: 10px;
+                }
             }
         }
     }
@@ -665,6 +730,11 @@ Discount
                 justify-content: center;
                 align-items: center;
                 color: $white;
+
+                @include respond-to('xs') {
+                    width: 30px;
+                    height: 30px;
+                }
             }
 
             &__integer {
@@ -673,6 +743,11 @@ Discount
                 font-size: 2rem;
                 line-height: 2.3rem;
                 color: inherit;
+
+                @include respond-to('xs') {
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
             }
 
             &__desc {
@@ -716,6 +791,10 @@ Latest news
         @include respond-to('md') {
             height: 80px;
         }
+
+        @include respond-to('md') {
+            justify-content: center;
+        }
     }
 
     &__link {
@@ -726,6 +805,12 @@ Latest news
     .browse-category {
         margin-left: 30px;
         width: 142px;
+
+        &__list {
+            @include respond-to('xs') {
+                transform: translateX(-20%);
+            }
+        }
     }
 }
 

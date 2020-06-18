@@ -24,6 +24,10 @@
         padding: 30px;
         margin-bottom: 30px;
 
+        @include respond-to('lg') {
+            min-height: 185px;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -75,5 +79,9 @@
         line-height: 2.6rem;
         color: $white;
         transition: color .5s;
+
+        @include respond-to('lg') {
+            font-size: 1.8rem;
+        }
     }
 }

@@ -1,0 +1,26 @@
+.tags {
+    &__item {
+        display: inline-block;
+        padding: 7px 12px;
+        border: 1px solid $blue-light;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        transition: all .3s ease-in;
+
+        &:hover {
+            background: $primary;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        color: $text-secondary;
+        transition: color .3s ease-in;
+    }
+}

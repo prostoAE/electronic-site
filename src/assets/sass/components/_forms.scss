@@ -95,12 +95,22 @@
 }
 
 .subscribe-form {
-    &-group {
+    @include respond-to('xs') {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
+    }
 
+    &-group {
+        @include respond-to('xs') {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__input[type="text"] {
         width: 320px;
+        max-width: 100%;
         margin-right: 50px;
         padding-bottom: 17px;
         font-weight: normal;
@@ -116,10 +126,19 @@
             color: $white;
             opacity: .5;
         }
+
+        @include respond-to('xs') {
+            margin-right: 10px;
+            max-width: 180px;
+        }
     }
 
     &__input[type="submit"] {
         border: none;
         width: 155px;
+
+        @include respond-to('xs') {
+            width: auto;
+        }
     }
 }

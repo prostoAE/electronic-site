@@ -29,6 +29,10 @@
             background: $white;
             border: 1px solid $blue-light;
             transition: all .3s;
+
+            @include respond-to('md') {
+                transform: translateX(-50%);
+            }
         }
 
         &__item {
@@ -122,6 +126,10 @@
             font-weight: 500;
             font-size: .8rem;
             color: $white;
+
+            @include respond-to('sm') {
+                right: 2px;
+            }
         }
 
         &__icon {
@@ -155,9 +163,20 @@
             justify-content: center;
             align-items: center;
 
+            @include respond-to('xs') {
+                margin-right: 5px;
+                width: 35px;
+                height: 35px;
+            }
+
             img {
                 width: 24px;
                 height: auto;
+
+                @include respond-to('xs') {
+                    width: 14px;
+                    height: auto;
+                }
             }
         }
 

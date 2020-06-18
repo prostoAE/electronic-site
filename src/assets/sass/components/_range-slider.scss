@@ -1,0 +1,38 @@
+.price-range {
+    &__slider {
+        height: 7px;
+        background: lighten($primary, 40%);
+        border: none !important;
+
+        .ui-slider-range {
+            height: 7px;
+            background: $primary;
+            border: none;
+        }
+
+        span {
+            width: 21px;
+            height: 21px;
+            border: 2px solid $primary !important;
+            border-radius: 100%;
+            background: $white !important;
+        }
+    }
+
+    &__info {
+        margin-top: 25px;
+        label {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: $text-secondary;
+        }
+    }
+
+    &__input {
+        border: none;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: $text-secondary;
+    }
+}
