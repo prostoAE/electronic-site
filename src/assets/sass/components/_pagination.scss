@@ -1,0 +1,56 @@
+.pagination {
+    margin-top: 50px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @include respond-to('sm') {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        box-shadow: $box-shadow;
+        margin-right: 15px;
+        background: $white;
+        transition: all .2s;
+
+        &.active {
+            background: $primary;
+
+            a {
+                color: $white;
+            }
+        }
+
+        &:not(.active) {
+            &:hover {
+                background: lighten($primary, 40%);
+            }
+        }
+    }
+
+    &__link {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #215EF8;
+    }
+
+    &__arrow {
+        display: block;
+        width: inherit;
+        height: inherit;
+        background: url("../img/icons/blue-arrow.png") no-repeat center;
+    }
+
+    &__next {
+        transform: rotate(180deg);
+    }
+}

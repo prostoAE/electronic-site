@@ -28,6 +28,12 @@ if (document.querySelector('#categories-news')) {
   };
 }
 
+if (document.querySelector('#productSort')) {
+  document.querySelector('#productSort').onclick = function () {
+    this.classList.toggle('active');
+  };
+}
+
 document.querySelector('.mobile-menu').onclick = function () {
   var menu = document.querySelector('.menu');
   this.classList.toggle('active');
