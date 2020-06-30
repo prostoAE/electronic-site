@@ -44,3 +44,8 @@
         }
     }
 }
+
+.review-btn {
+    @include button($secondary, $white, 190px);
+    border: 1px solid $secondary;
+}

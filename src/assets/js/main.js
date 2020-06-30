@@ -1,5 +1,17 @@
 $(document).ready(function () {
-    mainSliderInit();
+    if (document.querySelector('.slider')) {
+        mainSliderInit();
+    }
+    if (document.querySelector('.gallery-thumbs')) {
+        singleProductSliderInit();
+    }
+    if (document.querySelectorAll('.count')) {
+        setProductCount();
+    }
+
+    if (document.querySelector('#product-tabs')) {
+        $('#product-tabs').tabs();
+    }
 });
 
 function mainSliderInit() {
@@ -15,6 +27,29 @@ function mainSliderInit() {
         nextArrow: '<button type="button" class="slick-next"></button>',
     });
 }
+
+
+function singleProductSliderInit() {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        effect: 'flip',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+}
+
 
 document.querySelector('#categories').onclick = function () {
     this.classList.toggle('active');
@@ -96,7 +131,6 @@ $('.icons__item.view').on('click', function () {
 
     productModal.fadeIn();
     productSliderInit();
-    setProductCount();
 });
 $('.product-modal__close').on('click', function () {
     const productModal = $('#quickView');
@@ -106,7 +140,7 @@ $('.product-modal__close').on('click', function () {
     setTimeout(() => {
         $('.img-slider-box').slick('unslick');
         $('.img-nav').slick('unslick');
-    }, 1000);
+    }, 500);
 });
 
 /*
@@ -173,7 +207,9 @@ if (document.querySelector('#slider-range')) {
             slide: function (event, ui) {
                 $('#amount').val(ui.values[0] + 'грн. - ' + ui.values[1] + 'грн.');
             },
-            stop: function( event, ui ) {alert('Stop!!!')}
+            stop: function (event, ui) {
+                alert('Stop!!!')
+            }
         });
         $('#amount').val($('#slider-range').slider('values', 0) +
             'грн. - ' + $('#slider-range').slider('values', 1) + 'грн.');
@@ -181,9 +217,9 @@ if (document.querySelector('#slider-range')) {
 }
 
 if (document.querySelector('#accordion')) {
-    $( "#accordion" ).accordion({
+    $('#accordion').accordion({
         icons: false,
-        heightStyle: "content",
+        heightStyle: 'content',
         collapsible: true,
         active: 0
     });

@@ -1,0 +1,96 @@
+.product-tabs {
+    margin-top: 45px;
+    border: none !important;
+
+    &__list {
+        background: transparent;
+        border: none;
+    }
+
+    &__item {
+        padding: 0 !important;
+        background: transparent !important;
+        margin-right: 10px !important;
+        border: 1px solid $gray-light !important;
+
+        a {
+            padding: 15px 30px !important;
+        }
+
+        span {
+            margin-left: 5px;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            text-transform: uppercase;
+            color: $text-main;
+            font-family: $roboto;
+        }
+
+        &.ui-tabs-active {
+            background: $primary !important;
+
+            span {
+                color: $white;
+            }
+        }
+    }
+
+    &__content {
+        border: 1px solid $gray-light !important;
+        padding: 30px !important;
+
+        .prodcut-video {
+            margin-top: 50px;
+            text-align: center;
+
+            iframe {
+                width: 560px;
+                height: 315px;
+            }
+        }
+
+        .additionals {
+            width: 100%;
+
+            tr {
+                border: 1px solid $gray-light !important;
+                box-sizing: border-box;
+            }
+
+            th, td {
+                padding: 10px 20px;
+                text-align: left;
+                font-size: 1.5rem;
+                font-weight: normal;
+                line-height: 200%;
+                color: $text-secondary;
+                font-family: $roboto;
+            }
+
+            th {
+                width: 310px;
+                max-width: 100%;
+                font-weight: 700;
+                color: $text-main;
+            }
+        }
+
+        .review-form-title {
+            font-family: $roboto;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            color: $text-main;
+        }
+    }
+
+    &__desc {
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 200%;
+        color: $text-secondary;
+        font-family: $roboto;
+    }
+}

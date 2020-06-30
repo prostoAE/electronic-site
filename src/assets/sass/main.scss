@@ -35,12 +35,16 @@
     'components/range-slider',
     'components/product-category-widget',
     'components/shop-tags_widget',
-    'components/pagination';
+    'components/pagination',
+    'components/product-details',
+    'components/product-tabs',
+    'components/product-review';
 
 // pages folder
 @import
     'pages/home',
-    'pages/shop';
+    'pages/shop',
+    'pages/product';
 
 // themes folder
 @import

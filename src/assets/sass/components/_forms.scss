@@ -142,3 +142,59 @@
         }
     }
 }
+
+.review-form {
+    width: 100%;
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+
+        .form-group {
+            width: 49%;
+            max-width: 100%;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label {
+            margin-bottom: 10px;
+            font-family: $roboto;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: $text-secondary;
+        }
+    }
+
+    &__input[type="text"],
+    &__input[type="email"],
+    textarea {
+        background: $gray-light;
+        border: 1px solid $form-border;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 17px 20px;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: $text-main;
+
+        &::placeholder {
+            font-family: $roboto;
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: lighten($text-secondary, 20%);
+        }
+    }
+
+    .product-details__rating {
+        font-size: 2.5rem;
+    }
+}
