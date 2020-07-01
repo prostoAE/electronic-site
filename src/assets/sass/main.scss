@@ -38,13 +38,15 @@
     'components/pagination',
     'components/product-details',
     'components/product-tabs',
-    'components/product-review';
+    'components/product-review',
+    'components/cart-products-table';
 
 // pages folder
 @import
     'pages/home',
     'pages/shop',
-    'pages/product';
+    'pages/product',
+    'pages/cart';
 
 // themes folder
 @import

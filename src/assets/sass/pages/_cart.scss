@@ -1,0 +1,30 @@
+.cart {
+    padding: 90px 0;
+}
+
+.cart-items {
+    box-shadow: $box-shadow;
+    padding: 30px;
+}
+
+.cart-result {
+    margin-top: 50px;
+    box-shadow: $box-shadow;
+    padding: 30px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: $text-main;
+        margin-bottom: 25px;
+    }
+
+    .confirm-order {
+        margin-top: 30px;
+
+        &__btn {
+            @extend .refresh-cart__btn;
+        }
+    }
+}

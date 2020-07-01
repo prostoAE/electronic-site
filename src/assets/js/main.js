@@ -152,7 +152,7 @@ function setProductCount() {
 
     for (let i = 0; i < control.length; i++) {
         control[i].onclick = function () {
-            let input = document.querySelector('.count-input');
+            let input = this.parentElement.querySelector('.count-input');
 
             if (this.classList.contains('minus')) {
                 if (input.value <= 1) {

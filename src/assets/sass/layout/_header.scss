@@ -94,7 +94,7 @@
         }
     }
 
-    .cart {
+    .header-cart {
 
         @include respond-to('sm') {
             display: flex;

@@ -198,3 +198,57 @@
         font-size: 2.5rem;
     }
 }
+
+.cart-form {
+    &__count {
+        @extend .order-form__count;
+
+        .count {
+            background: $blue-light;
+            &:hover {
+                background: rgba(33, 94, 248, 0.2);
+            }
+        }
+    }
+
+    .count-input {
+        background: $blue-light;
+    }
+
+    .coupon {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        &__input {
+            margin-right: 30px;
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: $text-secondary;
+            border: 1px solid $form-border;
+            border-radius: 10px;
+            background: $gray-light;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        &__btn {
+            padding: 10px 20px;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            border: 1px solid $secondary;
+            border-radius: 10px;
+        }
+    }
+
+    .refresh-cart {
+        @extend .coupon;
+
+        &__btn {
+            @extend .coupon__btn;
+            width: auto;
+            margin-left: auto;
+        }
+    }
+}
