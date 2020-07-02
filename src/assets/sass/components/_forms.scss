@@ -252,3 +252,114 @@
         }
     }
 }
+
+.checkout-form {
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+
+        .form-group {
+            width: 49%;
+            max-width: 100%;
+        }
+    }
+
+    .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label {
+            margin-bottom: 10px;
+            font-family: $roboto;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: $text-secondary;
+        }
+    }
+    textarea {
+        background: $gray-light;
+        border: 1px solid $form-border;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 17px 20px;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: $text-main;
+
+        &::placeholder {
+            font-family: $roboto;
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: lighten($text-secondary, 20%);
+        }
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        border: 1px solid $secondary;
+        border-radius: 10px;
+    }
+
+    .required {
+        color: $del-color;
+        margin-left: 5px;
+    }
+
+    .variation {
+
+        &__color {
+            margin-right: 5px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: $white;
+
+            input {
+                visibility: hidden;
+                width: 15px;
+                height: 15px;
+                background: $secondary;
+            }
+
+            input:checked {
+                position: relative;
+                visibility: visible;
+
+                &::before {
+                    position: absolute;
+                    z-index: 15;
+                    content: '';
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 17px;
+                    height: 17px;
+                    border: 3px solid $white;
+                    background: inherit;
+                }
+
+                &::after {
+                    position: absolute;
+                    z-index: 12;
+                    content: '';
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 18px;
+                    height: 18px;
+                    background: inherit;
+                }
+            }
+        }
+    }
+}

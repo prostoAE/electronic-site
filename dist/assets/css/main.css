@@ -2155,6 +2155,157 @@ body {
     margin-left: auto;
 }
 
+.checkout-form .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.checkout-form .form-row .form-group {
+    width: 49%;
+    max-width: 100%;
+}
+
+.checkout-form .form-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.checkout-form .form-group label {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #6F6F6F;
+}
+
+.checkout-form textarea {
+    background: #F0F0F0;
+    border: 1px solid #DADADA;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 17px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #333333;
+}
+
+.checkout-form textarea::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #a2a2a2;
+}
+
+.checkout-form textarea::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #a2a2a2;
+}
+
+.checkout-form textarea:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #a2a2a2;
+}
+
+.checkout-form textarea::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #a2a2a2;
+}
+
+.checkout-form textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #a2a2a2;
+}
+
+.checkout-form__btn {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: 1px solid #FE5E1C;
+    border-radius: 10px;
+}
+
+.checkout-form .required {
+    color: #ff432d;
+    margin-left: 5px;
+}
+
+.checkout-form .variation__color {
+    margin-right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+}
+
+.checkout-form .variation__color input {
+    visibility: hidden;
+    width: 15px;
+    height: 15px;
+    background: #FE5E1C;
+}
+
+.checkout-form .variation__color input:checked {
+    position: relative;
+    visibility: visible;
+}
+
+.checkout-form .variation__color input:checked::before {
+    position: absolute;
+    z-index: 15;
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 17px;
+    border: 3px solid #ffffff;
+    background: inherit;
+}
+
+.checkout-form .variation__color input:checked::after {
+    position: absolute;
+    z-index: 12;
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: inherit;
+}
+
 .articles {
     margin-top: 50px;
 }
@@ -2863,6 +3014,121 @@ body {
     font-size: 1.5rem;
     line-height: 1.9rem;
     color: #333333;
+}
+
+.checkout-table {
+    width: 100%;
+    text-align: left;
+}
+
+.checkout-table thead th {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.checkout-table tr.product-item {
+    border-top: 1px solid rgba(33, 94, 248, 0.1);
+}
+
+.checkout-table tr.product-item th {
+    font-weight: bold;
+    line-height: 2rem;
+    width: 60%;
+}
+
+.checkout-table .checkout-price {
+    font-family: "Bellota", cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.checkout-table th, .checkout-table td {
+    padding: 15px 10px;
+    color: #333333;
+}
+
+.checkout-table .shiping-info {
+    border-top: 1px solid #FE5E1C;
+}
+
+.checkout-table .shiping-info th, .checkout-table .shiping-info td {
+    padding-top: 30px;
+}
+
+.checkout-table .shiping-info th {
+    font-weight: bold;
+}
+
+.checkout-table .shiping-info .checkout-form__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.checkout-table .shiping-info__wrapper {
+    display: inline-block;
+}
+
+.checkout-table .shiping-info__method {
+    margin: 0 5px;
+}
+
+.checkout-table .shiping-info__cost {
+    display: block;
+    margin: 5px 0 0 5px;
+    font-family: "Bellota", cursive;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.checkout-table .total-pay {
+    border-top: 1px solid #FE5E1C;
+}
+
+.checkout-table .total-pay th, .checkout-table .total-pay td {
+    padding-top: 30px;
+}
+
+.checkout-table .total-pay th {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.checkout-table .total-pay span {
+    font-family: "Bellota", cursive;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: #333333;
+}
+
+.checkout-table .payment-info {
+    border-top: 1px solid #FE5E1C;
+}
+
+.checkout-table .payment-info th, .checkout-table .payment-info td {
+    padding-top: 30px;
+}
+
+.checkout-table .payment-info .checkout-form__group {
+    margin-bottom: 10px;
+}
+
+.checkout-table .payment-info__method {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
 }
 
 /*
@@ -4078,4 +4344,26 @@ Content
 
 .cart-result .confirm-order {
     margin-top: 30px;
+}
+
+.checkout {
+    padding: 90px 0;
+}
+
+.checkout .billing-details {
+    padding: 30px 0;
+}
+
+.checkout .billing-details__title, .checkout .order-details__title {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: #FE5E1C;
+    margin-bottom: 30px;
+}
+
+.checkout .order-details {
+    padding: 30px 20px;
+    background: rgba(33, 94, 248, 0.1);
 }

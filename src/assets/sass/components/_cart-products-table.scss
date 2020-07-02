@@ -78,3 +78,115 @@
         }
     }
 }
+
+.checkout-table {
+    width: 100%;
+    text-align: left;
+
+    thead {
+        th {
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            text-transform: uppercase;
+            color: $text-main;
+        }
+    }
+
+    tr.product-item {
+        border-top: 1px solid $blue-light;
+        th {
+            font-weight: bold;
+            line-height: 2rem;
+            width: 60%;
+        }
+    }
+
+    .checkout-price {
+        font-family: $bellota;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 15px 10px;
+        color: $text-main;
+    }
+
+    .shiping-info {
+        border-top: 1px solid $secondary;
+
+        th,td {
+            padding-top: 30px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .checkout-form__group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        &__wrapper {
+            display: inline-block;
+        }
+
+        &__method {
+            margin: 0 5px;
+        }
+
+        &__cost {
+            display: block;
+            margin: 5px 0 0 5px;
+            font-family: $bellota;
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+    }
+
+    .total-pay {
+        border-top: 1px solid $secondary;
+
+        th,td {
+            padding-top: 30px;
+        }
+
+        th {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            text-transform: uppercase;
+            color: $text-main;
+        }
+
+        span {
+            font-family: $bellota;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            color: $text-main;
+        }
+    }
+
+    .payment-info {
+        border-top: 1px solid $secondary;
+
+        th,td {
+            padding-top: 30px;
+        }
+
+        .checkout-form__group {
+            margin-bottom: 10px;
+        }
+
+        &__method {
+            font-weight: bold;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+    }
+}
