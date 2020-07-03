@@ -3131,6 +3131,131 @@ body {
     line-height: 1.8rem;
 }
 
+.blog-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.blog-item__body {
+    padding: 30px;
+    background: #F0F0F0;
+    min-height: 255px;
+}
+
+.blog-item__date {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    width: 68px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #FE5E1C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.blog-item__date span {
+    font-size: 3.1rem;
+    line-height: 3.7rem;
+}
+
+.blog-item__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 52%;
+}
+
+.blog-item__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.blog-item__meta {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.blog-item__meta li {
+    margin-right: 20px;
+}
+
+.blog-item__meta i {
+    margin-right: 6px;
+    color: #FE5E1C;
+}
+
+.blog-item__meta a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #6F6F6F;
+}
+
+.blog-item__title {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.blog-item__except {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #6F6F6F;
+}
+
+.blog-item__link {
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #FE5E1C;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.blog-item__link i {
+    margin-left: 5px;
+    font-size: 1.4rem;
+    -webkit-transition: margin-left .3s;
+    transition: margin-left .3s;
+}
+
+.blog-item__link:hover {
+    color: #fea682;
+}
+
+.blog-item__link:hover i {
+    margin-left: 10px;
+}
+
 /*
 Main offer
 ============================================================================
@@ -4366,4 +4491,12 @@ Content
 .checkout .order-details {
     padding: 30px 20px;
     background: rgba(33, 94, 248, 0.1);
+}
+
+.blog {
+    padding: 90px 0;
+}
+
+.pagination {
+    margin-top: 0;
 }

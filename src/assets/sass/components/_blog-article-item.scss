@@ -1,0 +1,110 @@
+.blog-item {
+    position: relative;
+    margin-bottom: 50px;
+
+    &__body {
+        padding: 30px;
+        background: $gray-light;
+        min-height: 255px;
+    }
+
+    &__date {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        right: 15px;
+        width: 68px;
+        height: 68px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        background: $secondary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 3.1rem;
+            line-height: 3.7rem;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 52%;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__meta {
+        margin-bottom: 20px;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+        }
+
+        i {
+            margin-right: 6px;
+            color: $secondary;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $text-secondary;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: $text-main;
+        margin-bottom: 10px;
+    }
+
+    &__except {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $text-secondary;
+    }
+
+    &__link {
+        margin-top: 10px;
+        display: block;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: $secondary;
+        transition: all .3s;
+
+        i {
+            margin-left: 5px;
+            font-size: 1.4rem;
+            transition: margin-left .3s;
+        }
+
+        &:hover {
+            color: lighten($secondary, 20%);
+
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+}

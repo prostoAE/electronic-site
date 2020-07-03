@@ -39,7 +39,8 @@
     'components/product-details',
     'components/product-tabs',
     'components/product-review',
-    'components/cart-products-table';
+    'components/cart-products-table',
+    'components/blog-article-item';
 
 // pages folder
 @import
@@ -47,7 +48,8 @@
     'pages/shop',
     'pages/product',
     'pages/cart',
-    'pages/checkout';
+    'pages/checkout',
+    'pages/blog-archive';
 
 // themes folder
 @import
