@@ -1,0 +1,159 @@
+.blog-banner {
+    .page-info__title {
+        text-align: left;
+    }
+
+    .blog-exept {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 2.4rem;
+        line-height: 150%;
+        color: $white;
+        opacity: 0.7;
+    }
+
+    .blog-tags {
+        margin-top: 10px;
+        display: flex;
+
+        span {
+            font-weight: normal;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            color: $white;
+            opacity: 0.7;
+            margin-right: 8px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            margin-right: 6px;
+            font-weight: normal;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            color: $secondary;
+
+            a {
+                @extend .blog-tags__item;
+            }
+        }
+    }
+}
+
+.single-post-content {
+    padding-top: 90px;
+
+    p {
+        padding: 0 8%;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $text-secondary;
+    }
+
+    img {
+        margin: 50px 0;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 5rem;
+        line-height: 2;
+        text-align: center;
+        color: $text-main;
+    }
+}
+
+.article-author {
+    margin: 50px 0;
+    padding: 50px 0;
+    text-align: center;
+    background: $gray-light;
+
+    &__img {
+        width: 110px;
+        max-width: 100%;
+    }
+
+    &__author {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        color: $text-secondary;
+    }
+
+    &__name {
+        margin-top: 5px;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: $secondary;
+    }
+
+    &__info {
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 2.5rem;
+        line-height: 150%;
+        text-align: center;
+        color: $text-secondary;
+    }
+
+    &__social {
+        margin-top: 30px;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__link {
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: 1px dashed $text-secondary;
+            transition: color .3s;
+
+            i {
+                color: $text-secondary;
+                transition: color .3s;
+            }
+
+            &:hover {
+                border: 1px dashed $secondary;
+
+                i {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+.article-comments {
+    &__title {
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        color: $text-secondary;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .review-form {
+        margin: 50px 0;
+    }
+}

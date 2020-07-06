@@ -28,7 +28,6 @@ function mainSliderInit() {
     });
 }
 
-
 function singleProductSliderInit() {
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
@@ -49,7 +48,6 @@ function singleProductSliderInit() {
         }
     });
 }
-
 
 document.querySelector('#categories').onclick = function () {
     this.classList.toggle('active');
@@ -223,5 +221,4 @@ if (document.querySelector('#accordion')) {
         collapsible: true,
         active: 0
     });
-
 }
