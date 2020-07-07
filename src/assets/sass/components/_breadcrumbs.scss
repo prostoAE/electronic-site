@@ -32,5 +32,10 @@
         &.current {
             color: $primary;
         }
+
+        @include respond-to('xs') {
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+        }
     }
 }

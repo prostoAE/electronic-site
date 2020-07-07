@@ -18,6 +18,24 @@
         line-height: 1.9rem;
         text-transform: uppercase;
         color: $text-main;
+
+        @include respond-to('xs') {
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+    }
+
+
+    .cart-products__price-th {
+        @include respond-to('xs') {
+            display: none;
+        }
+    }
+
+    .cart-products__price-td {
+        @include respond-to('xs') {
+            display: none;
+        }
     }
 
     td {
@@ -27,12 +45,54 @@
         color: $text-secondary;
 
         i {
-            font-size: 20px;
+            font-size: 2rem;
             color: $text-secondary;
             transition: color .3s;
 
+            @include respond-to('md') {
+                font-size: 1.5rem;
+            }
+
             &:hover {
                 color: $del-color;
+            }
+        }
+
+        .cart-form__count {
+            @include respond-to('md') {
+                width: 90px;
+            }
+
+            @include respond-to('xs') {
+                width: 60px;
+            }
+
+            .count {
+                @include respond-to('md') {
+                    width: 30px;
+                    min-width: 30px;
+                    height: 40px;
+                }
+
+                @include respond-to('xs') {
+                    width: 20px;
+                    min-width: 20px;
+                    height: 40px;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .count-input {
+                @include respond-to('md') {
+                    width: 30px;
+                    height: 40px;
+                }
+
+                @include respond-to('xs') {
+                    width: 20px;
+                    height: 40px;
+                    font-size: 1.5rem;
+                }
             }
         }
     }
