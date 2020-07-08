@@ -11,6 +11,10 @@ Banner
         left: 50%;
         transform: translate(-50%, -50%);
 
+        @include respond-to('xs') {
+            width: 90%;
+        }
+
         &__title {
             font-weight: bold;
             font-size: 4.5rem;

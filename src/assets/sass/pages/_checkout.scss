@@ -1,6 +1,10 @@
 .checkout {
     padding: 90px 0;
 
+    @include respond-to('sm') {
+        padding: 50px 0;
+    }
+
     .billing-details {
         padding: 30px 0;
 
@@ -21,5 +25,11 @@
         }
 
         background: $blue-light;
+    }
+
+    .checkout-content {
+        @include respond-to('md') {
+            flex-direction: column-reverse;
+        }
     }
 }

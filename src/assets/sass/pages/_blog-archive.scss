@@ -1,5 +1,9 @@
 .blog {
     padding: 90px 0;
+
+    @include respond-to('sm') {
+        padding: 50px 0;
+    }
 }
 
 .pagination {
