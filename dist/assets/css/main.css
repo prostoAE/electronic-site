@@ -2340,7 +2340,7 @@ body {
     transform: scale(1.2);
 }
 
-.articles__item:hover p {
+.articles__item:hover h2 {
     color: #F24130;
 }
 
